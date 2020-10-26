@@ -13,6 +13,12 @@
 * {
   transition: 0.25s ease;
 }
+body{
+  font-family: "Circular-book";
+}
+.container{
+  width: 450px;
+}
 h1 {
   font-size: 16px;
   font-weight: 700;
@@ -26,7 +32,7 @@ h4 {
   align-items: center;
   display: flex;
   height: 48px;
-  width: 381px;
+  width: 450px;
   white-space: normal;
   letter-spacing: 2px;
   font-family: "Circular-black";
@@ -69,7 +75,7 @@ i {
   border-top: 1px solid #d9dadc;
   width: 100%;
   box-sizing: border-box;
-  text-align: center;
+ 
   margin: 20px 0;
   position: relative;
 }
@@ -77,9 +83,39 @@ i {
 .dividers strong {
   position: absolute;
   top: -12px;
-  left: auto;
-  right: auto;
+  left: 170px;
+  font-family: "Circular-bold";
+  font-size: 12px;
+ 
   z-index: 2;
   background-color: white;
   padding: 0 15px;
+}
+form > div{ 
+  width:100%;
+  margin: 0;
+}
+form label{
+  font-family: "Circular-bold";
+  font-size: 16px;
+}
+form a{
+  
+   color: #616467
+}
+form a:hover{
+  color: #15883E;
+}
+
+.box .btn{
+
+  width:100%;
+  border-radius:50px;
+  text-transform: uppercase;
+  color: white;
+  background-color: #15883E;
+  height: 47px;
+}
+.btn-success:hover{
+  background-color: #1DB954;
 }

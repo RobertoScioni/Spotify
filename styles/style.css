@@ -124,3 +124,68 @@ form a:hover {
 .aplogo {
   width: 18px;
 }
+
+#captcha {
+  position: fixed;
+  bottom: 5vh;
+  right: -186px;
+  box-shadow: 0px 0px 5px 2px lightgray;
+  transition: 0.3s ease;
+}
+
+#captchaImage {
+  width: 74px;
+  height: 70px;
+  font-size: 8px;
+  color: #555;
+  background-color: white;
+}
+
+#captchaImage a,
+#captchaImage span {
+  color: #555;
+}
+
+#captchaText {
+  background-color: #4a90e2;
+  color: white;
+  white-space: nowrap;
+  width: 166px;
+}
+
+#captchaText {
+  background-color: #4a90e2;
+  color: white;
+  font-size: 13px;
+  line-height: 20px;
+  white-space: nowrap;
+  width: 186px;
+  margin: 0;
+  padding: 0 16px;
+}
+
+#captchaText a {
+  color: white;
+  font-size: 10px;
+}
+
+#captcha:hover {
+  position: fixed;
+  bottom: 5vh;
+  right: 1vw;
+  box-shadow: 0px 0px 5px 2px lightgray;
+}
+
+#captcha:hover #captchaImage a,
+#captcha:hover #captchaImage span {
+  display: none;
+}
+
+#captcha:hover img {
+  height: 50px;
+  width: 50px;
+}
+
+#captcha:hover #captchaImage {
+  justify-content: center;
+  align-items: center;

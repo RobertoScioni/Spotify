@@ -36,7 +36,7 @@ h4 {
   width: 450px;
   white-space: normal;
   letter-spacing: 2px;
-  font-family: "Circular-bold";
+  font-family: "Circular-book";
   border-radius: 50px;
   font-size: 14px;
   margin-top: 9px;
@@ -116,9 +116,16 @@ form a:hover {
 .btn-success:hover {
   background-color: #1db954;
 }
-
+form a {
+  color: #616467;
 }
-
+=======
+.form-control {
+  border-radius: 0px;
+}
+form a {
+  color: #616467;
+}
 #captcha {
   position: fixed;
   bottom: 5vh;

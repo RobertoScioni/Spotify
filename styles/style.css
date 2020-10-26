@@ -1,27 +1,28 @@
 @font-face {
   font-family: "Circular-book";
-  src: url("/fonts/circular-book.woff2") format("woff2");
+  src: url("/fonts/lineto-circular-pro-book.ttf") format("woff2");
 }
 @font-face {
   font-family: "Circular-black";
-  src: url("/fonts/circular-black.woff2") format("woff2");
+  src: url("/fonts/lineto-circular-black.ttf") format("woff2");
 }
 @font-face {
   font-family: "Circular-bold";
-  src: url("/fonts/circular-bold.woff2") format("woff2");
+  src: url("/fonts/lineto-circular-pro-bold.ttf") format("woff2");
 }
 * {
   transition: 0.25s ease;
 }
-body{
+body {
   font-family: "Circular-book";
 }
-.container{
+.container {
   width: 450px;
 }
 h1 {
-  font-size: 16px;
-  font-weight: 700;
+  font-family: "Circular-black";
+  font-size: 15px;
+  font-weight: 800;
 }
 h4 {
   font-size: 18px;
@@ -35,10 +36,10 @@ h4 {
   width: 450px;
   white-space: normal;
   letter-spacing: 2px;
-  font-family: "Circular-black";
+  font-family: "Circular-bold";
   border-radius: 50px;
   font-size: 14px;
-  margin-top: 15px;
+  margin-top: 9px;
   padding: 14px 14px 18px;
   text-transform: uppercase;
 }
@@ -75,7 +76,7 @@ i {
   border-top: 1px solid #d9dadc;
   width: 100%;
   box-sizing: border-box;
- 
+
   margin: 20px 0;
   position: relative;
 }
@@ -86,36 +87,40 @@ i {
   left: 170px;
   font-family: "Circular-bold";
   font-size: 12px;
- 
+
   z-index: 2;
   background-color: white;
   padding: 0 15px;
 }
-form > div{ 
-  width:100%;
+form > div {
+  width: 100%;
   margin: 0;
 }
-form label{
+form label {
   font-family: "Circular-bold";
   font-size: 16px;
 }
-form a{
-  
-   color: #616467
+.form-control {
+  border-radius: 0px;
 }
-form a:hover{
-  color: #15883E;
+form a {
+  color: #616467;
+}
+form a:hover {
+  color: #15883e;
 }
 
-.box .btn{
-
-  width:100%;
-  border-radius:50px;
+.box .btn {
+  width: 100%;
+  border-radius: 50px;
   text-transform: uppercase;
   color: white;
-  background-color: #15883E;
+  background-color: #15883e;
   height: 47px;
 }
-.btn-success:hover{
-  background-color: #1DB954;
+.btn-success:hover {
+  background-color: #1db954;
+}
+.aplogo {
+  width: 18px;
 }

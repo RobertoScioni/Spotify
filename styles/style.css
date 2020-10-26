@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "Circular-book";
+  src: url("/fonts/circular-book.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Circular-black";
+  src: url("/fonts/circular-black.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Circular-bold";
+  src: url("/fonts/circular-bold.woff2") format("woff2");
+}
+* {
+  transition: 0.25s ease;
+}
 h1 {
   font-size: 16px;
   font-weight: 700;
@@ -5,4 +20,66 @@ h1 {
 h4 {
   font-size: 18px;
   font-weight: 700;
+}
+.login-buttons {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 48px;
+  width: 381px;
+  white-space: normal;
+  letter-spacing: 2px;
+  font-family: "Circular-black";
+  border-radius: 50px;
+  font-size: 14px;
+  margin-top: 15px;
+  padding: 14px 14px 18px;
+  text-transform: uppercase;
+}
+#fb {
+  background-color: #3b5998;
+  border: 2px solid #3b5998;
+}
+#fb:hover {
+  background-color: #3a61b3;
+  border-color: #3a61b3;
+}
+#apl {
+  background-color: black;
+  border: 2px solid black;
+}
+#apl:hover {
+  background-color: #333;
+  border: 2px solid #333;
+}
+#ggl {
+  background-color: transparent;
+  border: 2px solid #616467;
+  color: #616467;
+}
+i {
+  width: 18px;
+  height: 16px;
+}
+#ggl:hover {
+  color: white;
+  background-color: #616467;
+}
+.dividers {
+  border-top: 1px solid #d9dadc;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 20px 0;
+  position: relative;
+}
+
+.dividers strong {
+  position: absolute;
+  top: -12px;
+  left: auto;
+  right: auto;
+  z-index: 2;
+  background-color: white;
+  padding: 0 15px;
 }

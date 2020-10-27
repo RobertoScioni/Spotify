@@ -1,0 +1,1605 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <title>Spotify - Web Player</title>
+  </head>
+  <body id="homePage">
+    <div class="container-fluid">
+      <!--NAVBAR FOR BODY-->
+
+      <div class="container-fluid">
+        <div
+          class="row mt-4 align-items-center justify-content-center mb-5"
+          id="mainNav"
+        >
+          <div
+            class="list-group list-group-horizontal"
+            id="list-tab"
+            role="tablist"
+          >
+            <a
+              class="list-group-item list-group-item-action active"
+              id="list-trending-list"
+              data-toggle="list"
+              href="#list-trending"
+              role="tab"
+              aria-controls="trending"
+              >TRENDING</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              id="list-pod-list"
+              data-toggle="list"
+              href="#list-pod"
+              role="tab"
+              aria-controls="pod"
+              >PODCAST</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              id="list-moodGenres-list"
+              data-toggle="list"
+              href="#list-moodGenres"
+              role="tab"
+              aria-controls="moodGenres"
+              >MOODS AND GENRES</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              id="list-new-list"
+              data-toggle="list"
+              href="#list-new"
+              role="tab"
+              aria-controls="new"
+              >NEW RELEASES</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              id="list-discover-list"
+              data-toggle="list"
+              href="#list-discover"
+              role="tab"
+              aria-controls="discover"
+              >DISCOVER</a
+            >
+          </div>
+        </div>
+
+        <!--BODY CONTENT-->
+
+        <div class="row">
+          <div class="tab-content" id="nav-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="list-trending"
+              role="tabpanel"
+              aria-labelledby="list-trending-list"
+            >
+              <!--TRENDING-->
+              <div class="container-fluid">
+                <div class="row mb-3"><h2>#THROWBACKTHURSDAY</h2></div>
+
+                <div class="row">
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row mt-5 mb-3">
+                  <h3>Rankings</h3>
+                </div>
+
+                <div class="row">
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row mt-5 mb-3">
+                  <h3>Editor's Picks</h3>
+                </div>
+
+                <div class="row">
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="list-pod"
+              role="tabpanel"
+              aria-labelledby="list-pod-list"
+            >
+              <!--PODCASTS-->
+
+              <div class="container-fluid">
+                <div class="row mb-3"><h2>Top podcasts</h2></div>
+
+                <div class="row">
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row mt-5 mb-3">
+                  <h3>Shows to try</h3>
+                </div>
+
+                <div class="row">
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row mt-5 mb-3">
+                  <h3>Listen and learn to be a leader</h3>
+                </div>
+
+                <div class="row">
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="list-moodGenres"
+              role="tabpanel"
+              aria-labelledby="list-moodGenres-list"
+            >
+              <!--MOODS AND GENRES-->
+
+              <div class="container-fluid">
+                <div class="row mb-3"><h2>Mood</h2></div>
+
+                <div class="row">
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row mt-5 mb-3">
+                  <h3>Chill</h3>
+                </div>
+
+                <div class="row">
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row mt-5 mb-3">
+                  <h3>Rock</h3>
+                </div>
+
+                <div class="row">
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="list-new"
+              role="tabpanel"
+              aria-labelledby="list-new-list"
+            >
+              <!--NEW RELEASES-->
+
+              <div class="container-fluid">
+                <div class="row mb-3"><h2>New albums & singles</h2></div>
+
+                <div class="row">
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row mt-5 mb-3">
+                  <h3>Playlists</h3>
+                </div>
+
+                <div class="row">
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row mt-5 mb-3">
+                  <h3>Podcasts</h3>
+                </div>
+
+                <div class="row">
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="list-discover"
+              role="tabpanel"
+              aria-labelledby="list-discover-list"
+            >
+              <!--DISCOVER-->
+
+              <div class="container-fluid">
+                <div class="row mb-3"><h2>Top recommendations for you</h2></div>
+
+                <div class="row">
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row mt-5 mb-3">
+                  <h3>Because you listened to SIAMES</h3>
+                </div>
+
+                <div class="row">
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row mt-5 mb-3">
+                  <h3>Similar to Joji</h3>
+                </div>
+
+                <div class="row">
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card">
+                      <img
+                        src="/imgs/lofi-beats.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                        <i class="fab fa-spotify"></i>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

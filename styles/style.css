@@ -365,6 +365,7 @@ body#homePage {
 
 #homePage #nav-tabContent > div > .container-fluid {
   padding-left: 300px;
+  padding-bottom: 100px;
 }
 
 #mainNav.row {
@@ -612,6 +613,7 @@ body#homePage {
   background-color: transparent;
   border: none !important;
   width: 186px;
+  transition: 0.25s;
 }
 
 .contentnav {
@@ -1184,12 +1186,19 @@ body#artist-body {
 }
 .card-img-top {
   border-radius: 0;
-  margin-bottom: 23px;
+  margin-bottom: 0;
 }
-.card-img-top:hover {
+.card:hover .card-img-top {
   border-radius: 0;
+  z-index: 10;
   -webkit-animation: kenburns-left 0.25s ease-out both;
   animation: kenburns-left 0.25s ease-out both;
+}
+
+.card:hover .card-body {
+  padding-top: 40px;
+  padding-bottom: 0px;
+  z-index: 10;
 }
 
 .bg-pan-left {

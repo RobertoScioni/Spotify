@@ -475,6 +475,26 @@ body#homePage {
   left: 210px;
   margin-top: 0px;
 }
+.third-col-player{
+  position: absolute;
+  right:0;
+  display: flex;
+  text-align: right;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: -40px;
+  color: rgb(194, 194, 194);
+}
+#slidertwo{
+width:100px;
+height: 4px;
+background: #a39797;
+border-radius: 2px;
+  overflow: hidden;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
 
 /**** ANIMATION ****/
 

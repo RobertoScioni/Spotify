@@ -1078,10 +1078,87 @@ body#artist-body {
 }
 .card-img-top {
   border-radius: 0;
+  margin-bottom: 23px;
 }
 #album-body .card-img-top:hover {
-  box-shadow: 0px 0px 15px 10px rgb(108, 108, 108);
+  border-radius: 0;
 }
+#album-body .card-img-top:hover {
+  -webkit-animation: kenburns-left 0.25s ease-out both;
+  animation: kenburns-left 0.25s ease-out both;
+}
+.bg-pan-left {
+  -webkit-animation: bg-pan-left 2s both;
+  animation: bg-pan-left 2s both;
+}
+.kenburns-left {
+  -webkit-animation: kenburns-left 0.25s ease-out both;
+  animation: kenburns-left 0.25s ease-out both;
+}
+.shadow-drop-2-center {
+  -webkit-animation: shadow-drop-2-center 0.25s
+    cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.5s forwards;
+  animation: shadow-drop-2-center 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    1.5s forwards;
+}
+@-webkit-keyframes shadow-drop-2-center {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+  100% {
+    -webkit-transform: translateZ(50px);
+    transform: translateZ(50px);
+    -webkit-box-shadow: 0 0 20px 0px rgba(253, 253, 253, 0.35);
+    box-shadow: 0 0 20px 0px rgba(255, 255, 255, 0.35);
+  }
+}
+@keyframes shadow-drop-2-center {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translateZ(50px);
+    transform: translateZ(50px);
+    -webkit-box-shadow: 0 0 20px 0px rgba(255, 255, 255, 0.35);
+    box-shadow: 0 0 20px 0px rgba(255, 255, 255, 0.35);
+  }
+}
+
+@-webkit-keyframes kenburns-left {
+  0% {
+    -webkit-transform: scale(1) translate(0, 0);
+    transform: scale(1) translate(0, 0);
+    -webkit-transform-origin: 16% 50%;
+    transform-origin: 16% 50%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translate(-20px, 15px);
+    transform: scale(1.25) translate(-20px, 15px);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+  }
+}
+@keyframes kenburns-left {
+  0% {
+    -webkit-transform: scale(1) translate(0, 0);
+    transform: scale(1) translate(0, 0);
+    -webkit-transform-origin: 16% 50%;
+    transform-origin: 16% 50%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translate(-20px, 15px);
+    transform: scale(1.25) translate(-20px, 15px);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+  }
+}
+
 @-webkit-keyframes color-change-5x {
   0% {
     background: #1253ec;

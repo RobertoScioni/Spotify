@@ -1084,36 +1084,36 @@ body#artist-body {
 }
 @-webkit-keyframes color-change-5x {
   0% {
-    background: #19dcea;
+    background: #1253ec;
   }
   25% {
-    background: #b22cff;
+    background: #0f44c1;
   }
   50% {
-    background: #ea2222;
+    background: #0b3391;
   }
   75% {
-    background: #f5be10;
+    background: #0a2a75;
   }
   100% {
-    background: #3bd80d;
+    background: #061c4f;
   }
 }
 @keyframes color-change-5x {
   0% {
-    background: #19dcea;
+    background: #1253ec;
   }
   25% {
-    background: #b22cff;
+    background: #0f44c1;
   }
   50% {
-    background: #ea2222;
+    background: #0b3391;
   }
   75% {
-    background: #f5be10;
+    background: #0a2a75;
   }
   100% {
-    background: #3bd80d;
+    background: #061c4f;
   }
 }
 

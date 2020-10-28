@@ -470,6 +470,7 @@ body#homePage {
   bottom: 0;
   left: -200px;
   top: 12px;
+  
 }
 #homePage .slider > p:last-of-type {
   position: absolute;
@@ -496,7 +497,12 @@ body#homePage {
   text-align: center;
   justify-content: center;
 }
-
+.singer-player{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 13px;
+}
 /**** ANIMATION ****/
 
 .bounce-in-top {

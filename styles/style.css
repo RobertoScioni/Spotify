@@ -748,7 +748,8 @@ body#homePage {
   background-color: rgba(22, 21, 21, 0.898);
   color: white;
 }
-#album-body #album-banner .btn-play {
+#album-body #album-banner .btn-play,
+#artist-body .btn-play {
   margin-right: 10px;
   z-index: 100;
   color: #fff;
@@ -763,7 +764,8 @@ body#homePage {
   border-color: transparent;
 }
 
-#album-body #album-banner .btn-play:hover {
+#album-body #album-banner .btn-play:hover,
+#artist-body .btn-play:hover {
   box-shadow: 0 1px 3px 0 hsla(100, 95%, 40%, 0.149),
     0 0 40px 0 rgba(58, 216, 77, 0.143);
   border-radius: 50px;
@@ -847,7 +849,7 @@ body#homePage {
 #album-body .list-group-item:hover {
   color: white;
 }
-#album-body .navbar {
+.navbar {
   z-index: 1000000;
   background-color: #010103;
   position: fixed;
@@ -858,7 +860,7 @@ body#homePage {
   display: block;
 }
 
-#album-body .btnsign-up {
+.btnsign-up {
   position: absolute;
   left: 0;
   justify-content: center;
@@ -878,7 +880,7 @@ body#homePage {
   color: black;
   border-color: white;
 }
-#album-body .btnlogin {
+.btnlogin {
   position: absolute;
   left: 0;
   height: 25px;
@@ -899,7 +901,7 @@ body#homePage {
   display: flex;
   margin-bottom: 0;
 }
-#album-body .text-bottom {
+.text-bottom {
   position: absolute;
   margin-top: 0;
   bottom: 0;
@@ -911,25 +913,25 @@ body#homePage {
   left: 25%;
   font-size: 13px;
 }
-#album-body .lignenav {
+.lignenav {
   border-right: 2px solid rgb(82, 79, 79);
   padding-right: 10px;
   height: 15px;
 }
 
-#album-body .profile-nav {
+.profile-nav {
   position: absolute;
   margin: auto;
   bottom: 35px;
   padding-right: 20px;
   border-bottom: 1px solid lightgray;
 }
-#album-body .profile-pic {
+.profile-pic {
   position: absolute;
   bottom: 15px;
   margin: auto;
 }
-#album-body .player-container {
+.player-container {
   position: fixed;
   bottom: 0;
   display: flex;
@@ -942,14 +944,14 @@ body#homePage {
   width: 100%;
   height: 10%;
 }
-#album-body .slider > p {
+.slider > p {
   position: absolute;
   margin-top: 0px;
   right: 210px;
   color: rgb(206, 206, 206);
   font-size: 12px;
 }
-#album-body .lineplayer {
+.lineplayer {
   background-color: white;
   height: 2px;
   width: 400px;
@@ -958,7 +960,7 @@ body#homePage {
   left: -200px;
   top: 12px;
 }
-#album-body .slider > p:last-of-type {
+.slider > p:last-of-type {
   position: absolute;
   left: 210px;
   margin-top: 0px;
@@ -994,7 +996,134 @@ body#homePage {
     box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
   }
 }
-/************************END********************************/
+/************************ARTIST PAGE********************************/
+
+body#artist-body {
+  background-color: rgb(10, 10, 10);
+}
+
+#artist-body h1 {
+  font-size: 30px;
+  width: 300px;
+  color: white;
+}
+
+#artist-body > .container-fluid {
+  padding-left: 20vw;
+}
+
+.color-change-5x {
+  -webkit-animation: color-change-5x 10s linear infinite alternate both;
+  animation: color-change-5x 10s linear infinite alternate both;
+}
+
+.pulsate-bck {
+  -webkit-animation: pulsate-bck 1.5s ease-in-out infinite both;
+  animation: pulsate-bck 1.5s ease-in-out infinite both;
+}
+
+#artist-body i {
+  font-size: 20px;
+  color: #696969;
+  z-index: 2;
+}
+
+#artist-body i:hover {
+  color: white;
+  cursor: pointer;
+  -webkit-animation: pulsate-bck 1.5s ease-in-out infinite both;
+  animation: pulsate-bck 1.5s ease-in-out infinite both;
+}
+
+#songList {
+  color: white;
+  padding-left: 90px;
+}
+
+#songList > .container > .row {
+  margin-top: 10px;
+}
+
+#songList h5,
+#songList .songLength {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+#songList h6 {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#artist-body .text-muted {
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@-webkit-keyframes color-change-5x {
+  0% {
+    background: #19dcea;
+  }
+  25% {
+    background: #b22cff;
+  }
+  50% {
+    background: #ea2222;
+  }
+  75% {
+    background: #f5be10;
+  }
+  100% {
+    background: #3bd80d;
+  }
+}
+@keyframes color-change-5x {
+  0% {
+    background: #19dcea;
+  }
+  25% {
+    background: #b22cff;
+  }
+  50% {
+    background: #ea2222;
+  }
+  75% {
+    background: #f5be10;
+  }
+  100% {
+    background: #3bd80d;
+  }
+}
+
+@-webkit-keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
 
 /*************************************MEDIA QUERIES**********************************/
 

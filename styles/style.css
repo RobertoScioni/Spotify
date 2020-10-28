@@ -755,16 +755,19 @@ body#homePage {
   border-radius: 50px;
   background-color: rgba(22, 21, 21, 0.469);
   right: 35%;
-  height: 46px;
-  min-width: 169px;
+  height: 33px;
+  min-width: 136px;
   top: 65%;
+  font-size: 11px;
+  letter-spacing: 2px;
 }
 
 #album-body #album-banner .btn-follow:hover {
   box-shadow: 0 1px 3px 0 hsla(0, 0%, 100%, 0.3),
     0 0 40px 0 rgba(12, 12, 11, 0.5);
   border-radius: 50px;
-  min-height: 46px;
+  min-height: 35px;
+  min-width: 138px;
   background-color: rgba(22, 21, 21, 0.898);
   color: white;
 }
@@ -776,9 +779,11 @@ body#homePage {
   border-radius: 50px;
   background-color: #15883e !important;
   right: 46%;
-  height: 46px;
-  min-width: 169px;
+  height: 33px;
+  min-width: 136px;
   top: 65%;
+  font-size: 11px;
+  letter-spacing: 2px;
   border-width: 0px;
   border-style: none;
   border-color: transparent;
@@ -789,7 +794,8 @@ body#homePage {
   box-shadow: 0 1px 3px 0 hsla(100, 95%, 40%, 0.149),
     0 0 40px 0 rgba(58, 216, 77, 0.143);
   border-radius: 50px;
-  min-height: 46px;
+  min-height: 35px;
+  min-width: 138px;
   background-color: rgba(22, 21, 21, 0.898);
   color: white;
 }
@@ -797,16 +803,26 @@ body#homePage {
   z-index: 100;
 
   color: white;
-  font-size: 60px;
+  font-size: 50px;
   left: 45%;
   top: -20px;
+  margin-top: 25px;
 }
 #album-body .buttonbox {
   position: absolute;
-  top: 55%;
+  top: 20%;
   width: 100%;
   height: 100px;
   z-index: 100000;
+  padding-left: 40px;
+  
+
+}
+.buttonbox > p{
+
+padding-bottom: 50px;
+ color: rgba(241, 241, 228, 0.666);
+  right:220px
 }
 #album-body #imgdts {
   height: 50px;
@@ -814,7 +830,7 @@ body#homePage {
   cursor: pointer;
 }
 #album-body #containerfix {
-  padding-left: 20vh;
+  padding-left: 30vh;
   padding-right: 25vh;
 }
 #album-body .row {
@@ -828,9 +844,12 @@ body#homePage {
   border: none !important;
 }
 
-#album-body .container-fluid {
-  margin-right: 60px;
-  margin-left: 60px;
+.contentnav{
+  margin-bottom: 20px;
+  position: absolute;
+    left: 35%;
+    top: 90%;
+    z-index: 10;
 }
 #album-body .list-group-item {
   text-align: center;

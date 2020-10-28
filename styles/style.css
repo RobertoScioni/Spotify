@@ -475,21 +475,21 @@ body#homePage {
   left: 210px;
   margin-top: 0px;
 }
-.third-col-player{
-  position: absolute;
-  right:0;
+.third-col-player {
+  position: fixed;
+  right: 0;
+  bottom: 4%;
   display: flex;
   text-align: right;
   justify-content: flex-end;
   align-items: center;
-  margin-top: -40px;
   color: rgb(194, 194, 194);
 }
-#slidertwo{
-width:100px;
-height: 4px;
-background: #a39797;
-border-radius: 2px;
+#slidertwo {
+  width: 100px;
+  height: 4px;
+  background: #a39797;
+  border-radius: 2px;
   overflow: hidden;
   display: flex;
   text-align: center;
@@ -869,7 +869,7 @@ border-radius: 2px;
 #album-body .list-group-item:hover {
   color: white;
 }
-.navbar {
+.navbar:not(.loginNav) {
   z-index: 1000000;
   background-color: #010103;
   position: fixed;
@@ -984,6 +984,21 @@ border-radius: 2px;
   position: absolute;
   left: 210px;
   margin-top: 0px;
+}
+
+.nav-link {
+  font-size: 14px;
+  font-family: "Circular-black";
+  color: #b3b3b3 !important;
+}
+
+.nav-link:hover {
+  color: white !important;
+}
+
+.nav-link svg {
+  margin-right: 10px;
+  width: 24px;
 }
 
 /****ANIMATION****/

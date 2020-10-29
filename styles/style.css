@@ -1152,12 +1152,25 @@ body#artist-body {
   color: #696969;
   z-index: 2;
 }
-
-#artist-body i:hover {
+#album-body i {
+  font-size: 17px;
+  color: #acacac;
+  z-index: 2;
+}
+#album-body i:hover {
+  font-size: 17px;
+  color: #ffffff;
+  z-index: 2;
+}
+i:hover {
   color: white;
   cursor: pointer;
   -webkit-animation: pulsate-bck 1.5s ease-in-out infinite both;
   animation: pulsate-bck 1.5s ease-in-out infinite both;
+}
+#playbtn:hover {
+}
+#followbtn:hover {
 }
 
 #songList {
@@ -1256,4 +1269,10 @@ body#artist-body {
   #mainNav.row {
     padding: 0 0;
   }
+}
+.card-img-top.related {
+  border-radius: 100px;
+}
+.card-img-top.related:hover {
+  border-radius: 0;
 }

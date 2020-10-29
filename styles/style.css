@@ -475,7 +475,7 @@ body#homePage {
   align-items: center;
   color: rgb(194, 194, 194);
 }
-#slidertwo {
+/*#slidertwo {
   width: 100px;
   height: 4px;
   background: #a39797;
@@ -484,7 +484,8 @@ body#homePage {
   display: flex;
   text-align: center;
   justify-content: center;
-}
+  padding-bottom:0 ;
+}*/
 .singer-player {
   position: fixed;
   bottom: 0;

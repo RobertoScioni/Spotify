@@ -1152,10 +1152,6 @@ i:hover {
   -webkit-animation: pulsate-bck 1.5s ease-in-out infinite both;
   animation: pulsate-bck 1.5s ease-in-out infinite both;
 }
-#playbtn:hover {
-}
-#followbtn:hover {
-}
 
 #songList {
   color: white;
@@ -1188,7 +1184,7 @@ i:hover {
 }
 .card-img-top:hover {
   border-radius: 0;
-  z-index: 10;
+
   -webkit-animation: kenburns-left 0.25s ease-out both;
   animation: kenburns-left 0.25s ease-out both;
 }
@@ -1262,11 +1258,48 @@ i:hover {
     padding-bottom: 100px;
   }
 
+  #homePage #nav-tabContent .card {
+    margin: 0 auto;
+  }
+
   #mainNav.row {
     padding: 0px 0px;
   }
 
+  #artist-body > .container-fluid {
+    padding-left: 0;
+  }
+
+  #songList {
+    padding-left: 10vw;
+  }
+
+  #album-body #containerfix {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  #album-body .card {
+    margin: 0 auto !important;
+  }
+
+  #album-body .card-img-top {
+    width: 180px;
+  }
+
+  #album-body #nav-tabContent h1 {
+    text-align: center;
+  }
+
+  #album-body .jumbotron {
+    padding-left: 0;
+  }
+
   #homePage .navbar {
+    display: none;
+  }
+
+  .navbar:not(.loginNav) {
     display: none;
   }
 
@@ -1275,7 +1308,7 @@ i:hover {
     position: fixed;
     top: 10%;
     background-color: transparent;
-    z-index: 15;
+    z-index: 1000000;
   }
 
   .dropright .btn:focus {
@@ -1288,6 +1321,21 @@ i:hover {
   }
 
   .dropright .btn {
+    color: white;
+    font-size: 30px;
+  }
+
+  .dropright .btn {
+    color: white;
+    font-size: 30px;
+  }
+
+  #album-body .dropright .btn i {
+    color: white;
+    font-size: 30px;
+  }
+
+  #artist-body .dropright .btn i {
     color: white;
     font-size: 30px;
   }
@@ -1364,25 +1412,27 @@ i:hover {
   .third-col-player svg:first-of-type {
     position: absolute;
     right: 0;
-    top: -32px;
+    top: -5px;
   }
 
   .third-col-player svg:nth-of-type(2) {
     position: absolute;
     right: 25px;
-    top: -32px;
+    top: -5px;
   }
 
   .third-col-player svg:last-of-type {
     position: absolute;
     right: 50px;
-    top: -32px;
+    top: -5px;
   }
 
-  .third-col-player #slidertwo {
+  .third-col-player form {
     position: absolute;
     width: 15vw;
+    bottom: 0px;
     right: 0;
+    z-index: 30;
   }
 }
 .card-img-top.related {

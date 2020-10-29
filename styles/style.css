@@ -1257,3 +1257,17 @@ body#artist-body {
     padding: 0 0;
   }
 }
+
+/*************************************REGISTER PAGE***********************************************/
+#Register-page {
+  max-width: 450px;
+}
+.checkboxed span{
+
+  color: rgb(24, 24, 24);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  font-family: "Circular-book";
+} 

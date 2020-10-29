@@ -244,7 +244,6 @@ input[type="checkbox"]:checked + label:before {
   position: absolute;
   left: 15px;
   bottom: 120px;
-
   justify-content: center;
   align-items: center;
   display: flex;
@@ -262,6 +261,13 @@ input[type="checkbox"]:checked + label:before {
   color: black;
   border-color: white;
 }
+
+#homePage .btnsign-up:hover {
+  background-color: #1db954;
+  border-color: white;
+  color: white;
+}
+
 #homePage .btnlogin {
   position: absolute;
   left: 15px;
@@ -286,9 +292,9 @@ input[type="checkbox"]:checked + label:before {
 }
 
 #homePage .btnlogin:hover {
-  background-color: white;
-  border-color: rgb(24, 21, 21);
-  color: rgb(24, 21, 21);
+  background-color: #1db954;
+  border-color: white;
+  color: white;
 }
 
 #homePage .text-bottom {
@@ -303,11 +309,7 @@ input[type="checkbox"]:checked + label:before {
   left: 60px;
   font-size: 13px;
 }
-#homePage .lignenav {
-  border-left: 2px solid rgb(82, 79, 79);
-  padding-left: 20px;
-  height: 15px;
-}
+
 .profile-nav {
   position: absolute;
   margin: auto;
@@ -705,8 +707,8 @@ body#homePage {
   font-size: 13px;
 }
 .lignenav {
-  border-right: 2px solid rgb(82, 79, 79);
-  padding-right: 10px;
+  border-left: 2px solid rgb(82, 79, 79);
+  padding-left: 20px;
   height: 15px;
 }
 
@@ -763,6 +765,14 @@ body#homePage {
   color: #b3b3b3 !important;
 }
 
+ul > .nav-item:hover::before {
+  content: "";
+  position: absolute;
+  border-left: 4px solid green;
+  height: 40px;
+  left: 0;
+}
+
 .nav-link:hover {
   color: white !important;
 }
@@ -770,6 +780,7 @@ body#homePage {
 .nav-link svg {
   margin-right: 10px;
   width: 24px;
+  transition: 0.25s ease;
 }
 
 /**** ANIMATION ****/
@@ -1345,8 +1356,14 @@ i:hover {
   }
 
   .dropdown-menu {
-    background-color: white;
+    color: white;
+    background-color: transparent;
+    backdrop-filter: blur(4px);
     padding: 0 0;
+  }
+
+  .dropdown-item {
+    color: white;
   }
 
   .dropdown-item:hover {
@@ -1447,15 +1464,16 @@ i:hover {
   max-width: 450px;
 }
 
-.date,.gender,.messagecheck{
+.date,
+.gender,
+.messagecheck {
   padding: 0 16px;
 }
-label > span{
-
+label > span {
   color: rgb(24, 24, 24);
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0.25px;
   font-family: "Circular-book";
-} 
+}

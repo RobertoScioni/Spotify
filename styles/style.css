@@ -1360,6 +1360,9 @@ i:hover {
     background-color: transparent;
     backdrop-filter: blur(4px);
     padding: 0 0;
+    width: 98vw;
+    text-align: center;
+    position: relative;
   }
 
   .dropdown-item {
@@ -1367,8 +1370,12 @@ i:hover {
   }
 
   .dropdown-item:hover {
-    border-left: 7px solid green;
-    background-color: white;
+    content: "";
+    border-left: 200px solid rgba(0, 0, 0, 0.111);
+    border-right: 200px solid rgba(0, 0, 0, 0.118);
+    backdrop-filter: blur(4px);
+    background-color: transparent;
+    color: white;
   }
 
   .dropdown-item:first-of-type:hover {

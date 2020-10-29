@@ -1262,7 +1262,11 @@ body#artist-body {
 #Register-page {
   max-width: 450px;
 }
-.checkboxed span{
+
+.date,.gender,.messagecheck{
+  padding: 0 16px;
+}
+label > span{
 
   color: rgb(24, 24, 24);
   font-size: 14px;

@@ -40,7 +40,7 @@
       type="text/css"
     />
     <link rel="icon" href="imgs/spotifymainlogo.ico">
-    <title>Login - Spotify</title>
+    <title>Sign up - Spotify</title>
   </head>
   <body>
     <nav class="navbar navbar-dark px-0 loginNav">
@@ -119,20 +119,114 @@
               id="inlineFormInput"
               placeholder="Enter your username"
             />
-            <span>This name will appear on your profile </span>
+            <small>This name will appear on your profile </small>
+          </div>
+        
+
+          <div class="col col-12">
+              <div class="row">
+                  <div class="col col-12">
+                    <label for="inlineFormInput"> Enter your date of birth</label>
+       
+            </div>
+            <div class="row d-flex">
+                <div class="col col-3">
+            <label for="inlineFormInput">Day</label>
+            <input
+              type="text"
+              class="form-control mb-2"
+              id="inlineFormInput"
+              placeholder="DD"
+            />
+        </div>
+        <div class="col col-md-5 mb-0 pb-0" >
+            <label for="day">Month</label>
+            <select id="inputState" class="form-control" required>
+              <option class="text-muted">Month</option>
+              <option>January</option>
+              <option>February</option>
+              <option>March</option>
+              <option>April</option>
+              <option>May</option>
+              <option>June</option>
+              <option>July</option>
+              <option>August</option>
+              <option>September</option>
+              <option>October</option>
+              <option>November</option>
+              <option>Dicember</option>
+            </select>
+        </div>
+        <div class="col col-md-4">
+            <label for="year">year</label>
+            <input
+              type="number"
+              id="year"
+              class="form-control"
+              placeholder="YYYY"
+              required
+            />
+        </div>
+        
+
+        </div>
+    </div>
+       
+          <div class="row d-flex flex-column">
+        <label class="form-group" for="gender">What's your gender?</label>
+        <div class="row">
+            <div class="col">
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1"> Man </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2"> Women </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+            <label class="form-check-label" for="inlineRadio3"> Other </label>
           </div>
         </div>
-      </form>
+        </div>
+        <div class="row">
+            
+            <div class="form-check  mt-3 mb-3 d-flex justify-content-center px-0">
+              
+                <input type="checkbox" id="checkboxed" name="check" value="checkboxy">
+                <label for="checkboxed">I want to receive Spotify marketing messages.</label>
+            </div>
+        
+          
+        </div>
+        <div class="row">
+            <div class="form-check  mt-3 mb-3 d-flex justify-content-center px-0">
+              
+                <input type="checkbox" id="checkboxed" name="check" value="checkboxy">
+                <label for="checkboxed">Share my registration data with the content providers on Spotify. This information may be used for marketing purposes. Note: according to our privacy policy, your data may be sent to a country outside the EEA.</label>
+            </div>
+        
+        </div>
+          
+        </div>
+       <div class="row">
+        <div class="form-check  mt-3 mb-3 d-flex justify-content-center px-0">
+
+              
+            <input type="checkbox" id="checkboxed" name="check" value="checkboxy">
+            <label for="checkboxed">I agree to Spotify's <a href="https://www.spotify.com/us/legal/end-user-agreement/">Terms</a>   and <a href="https://www.spotify.com/us/legal/privacy-policy/">Privacy Policy .</a> </label>
+        </div>
+    
+    </div>
+        
+    
+
+    
+      
       <div class="container box mt-5">
         <div class="row">
-          <div class="col-12 col-md-6 text-left px-0">
-            <div class="form-check mb-2">
-              <form>
-                <input type="checkbox" id="checkboxed" name="check" value="checkboxy">
-                <label for="checkboxed">Remember me</label>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 text-left">
+          <div class="col-12 col-md-12 text-center">
             <button type="Log in" class="btn btn-success mb-2">Log in</button>
           </div>
         </div>

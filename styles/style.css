@@ -597,6 +597,10 @@ body#homePage {
   transition: 0.25s;
 }
 
+#album-body #list-messages .card {
+  width: auto;
+}
+
 .contentnav {
   margin-bottom: 20px;
   position: absolute;
@@ -1178,7 +1182,7 @@ i:hover {
   border-radius: 0;
   margin-bottom: 0;
 }
-.card:hover .card-img-top {
+.card-img-top:hover {
   border-radius: 0;
 
   -webkit-animation: kenburns-left 0.25s ease-out both;
@@ -1202,6 +1206,9 @@ i:hover {
 
 .dropright {
   display: none;
+}
+.card-img {
+  width: 100%;
 }
 
 /*************************************MEDIA QUERIES**********************************/

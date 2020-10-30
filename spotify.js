@@ -113,6 +113,7 @@ progressContainer.addEventListener('click', setProgress);
 
 
 
+
 /*************************************Register page***********************************************/
 
 const form = document.getElementById('form');
@@ -216,6 +217,7 @@ close_btn.addEventListener('click', () => {
 	social_panel_container.classList.remove('visible')
 });
 
+
 //views//
 
 type="application/javascript"
@@ -256,6 +258,5 @@ type="application/javascript"
       document.getElementById("view_count_text").innerHTML = "<i class='far fa-eye'></i>" + views;  
     });
   }
-
 
 

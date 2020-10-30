@@ -81,52 +81,65 @@
           </div>
         </div>
       </div>
-      <form>
+      <form id="form">
         <div class="form-row align-items-center form-column flex-column">
-          <div class="col col-12">
+          <div class="col col-12 formlogin">
             <label for="inlineFormInput"> Your e-mail address</label>
             <input
-              type="text"
+              type="email"
               class="form-control mb-2"
-              id="inlineFormInput"
+              id="email"
               placeholder="Give me your e-mail address"
             />
+            <i class="fa fa-check-circle" aria-hidden="true"></i>
+            <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+            <small> Error message</small>
           </div>
-          <div class="col col-12">
-            <label for="rememberMe">Confirm your e-mail</label>
-            <input
-              type="text"
-              class="form-control mb-2"
-              id="rememberMe"
-              placeholder="Please re-enter your email"
-            />
-
-          </div>
-          <div class="col col-12">
+        
+          <div class="col col-12 formlogin">
             <label for="inlineFormInput">Create a password</label>
             <input
-              type="text"
+              type="password"
               class="form-control mb-2"
-              id="inlineFormInput"
+              id="password"
               placeholder="Create a password"
             />
+            <i class="fa fa-check-circle" aria-hidden="true"></i>
+            <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+            <small> Error message</small>
           </div>
-          <div class="col col-12">
+          <div class="col col-12 formlogin">
+            <label for="inlineFormInput">Re-enter the password</label>
+            <input
+              type="password"
+              class="form-control mb-2"
+              id="password2"
+              placeholder="Create a password"
+            />
+            <i class="fa fa-check-circle" aria-hidden="true"></i>
+            <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+            <small> Error message</small>
+          </div>
+          <div class="col col-12 formlogin ">
             <label for="inlineFormInput">How are we to address you?</label>
             <input
               type="text"
               class="form-control mb-2"
-              id="inlineFormInput"
+              id="username"
               placeholder="Enter your username"
             />
-            <small>This name will appear on your profile </small>
+            <i class="fa fa-check-circle" aria-hidden="true"></i>
+            <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+            <small> Error message</small>
+        
           </div>
         
 
-          <div class="col col-12">
+          <div class="col col-12 ">
               <div class="row">
-                  <div class="col col-12">
+                  <div class="col col-12 ">
                     <label for="inlineFormInput"> Enter your date of birth</label>
+                    
        
             </div>
             <div class=" date row d-flex">
@@ -218,7 +231,7 @@
      
   
         
-    </form>
+
 
     
       
@@ -235,13 +248,16 @@
       >
         <p>Already have an account? <a href="login.html">Log in </a> </p>
         </div>
+      </form>
     </div>
+    
 
 
 
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="spotify.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

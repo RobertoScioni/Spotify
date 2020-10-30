@@ -1403,6 +1403,44 @@ label > span {
   line-height: 20px;
   letter-spacing: 0.25px;
   font-family: "Circular-book";
+} 
+.formlogin{
+  position:relative;
+  padding-bottom: 20px;
+
+}
+.formlogin i{
+  position: absolute;
+  top:40px;
+  right:20px;
+  visibility: hidden;
+}
+.formlogin small{
+ visibility: hidden;
+  position: absolute;
+  bottom: 0px;
+  left:4px;
+  padding-bottom: 10px
+
+}
+.formlogin.sucess input{
+  border-color: #2ecc71;
+}
+.formlogin.error input{
+  border-color: #e74c3c;
+}
+.formlogin.sucess i.fa-check-circle{
+  color: #2ecc71;
+  visibility: visible;
+}
+.formlogin.error i.fa-exclamation-circle{
+  color: #e74c3c;
+  visibility: visible;
+}
+.formlogin.error small{
+  color: #e74c3c;
+  visibility: visible;
+
 }
 
 /*************************************Player 2***********************************************/

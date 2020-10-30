@@ -6,6 +6,8 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
 
     <link
       rel="stylesheet"
@@ -23,7 +25,7 @@
     <link href="/favicon.ico" type="image/x-icon" rel="icon" />
 
     <link rel="stylesheet" href="styles/style.css" />
-    <link rel="icon" href="imgs/spotifymainlogo.ico">
+    <link rel="icon" href="imgs/spotifymainlogo.ico" />
     <title>Spotify - Web Player</title>
   </head>
   <body class="color-change-5x" id="homePage">
@@ -103,7 +105,15 @@
                 <p class="text-secondary my-0 py-0 ml-3 mr-1">Cookie</p>
                 <p class="text-secondary lignenav my-0 py-0 ml-3">Privacy</p>
               </div>
-              <p class="text-secondary mr-5">Policy</p>
+              <div>
+                <p id="view_count_header"></p>
+                <div id="view_count_container">
+                  <p
+                    style="margin-bottom: 0 !important"
+                    id="view_count_text"
+                  ></p>
+                </div>
+              </div>
             </div>
           </div>
         </ul>
@@ -111,10 +121,17 @@
     </nav>
 
     <div class="btn-group dropright">
-      <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <button
+        style="z-index: 100"
+        type="button"
+        class="btn dropdown-toggle"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
         <i class="fab fa-spotify"></i>
       </button>
-      
+
       <div class="dropdown-menu position-absolute">
         <a class="dropdown-item" href="index.html">Home</a>
         <a class="dropdown-item" href="artist.html">Search</a>
@@ -123,7 +140,6 @@
         <a class="dropdown-item" href="Register.html">Sign Up</a>
         <a class="dropdown-item" href="login.html">Login</a>
       </div>
-    
     </div>
     <!-- end of navbar -->
 
@@ -199,7 +215,7 @@
               aria-labelledby="list-trending-list"
             >
               <!--TRENDING-->
-              <div class="container-fluid ">
+              <div class="container-fluid">
                 <div class="row mb-3"><h2>#THROWBACKTHURSDAY</h2></div>
 
                 <div class="row">
@@ -1696,7 +1712,6 @@
 
     <!-- START PLAYER -->
 
-
     <div
       class="col col-lg-12 d-flex flex-column text-center player-container"
       id="player-container"
@@ -1737,7 +1752,6 @@
               />
             </svg>
           </button>
-
 
           <button id="play" class="action-btn action-btn-big">
             <i
@@ -1880,6 +1894,10 @@
     </div>
     <!-- End PLAYER -->
     <script src="spotify.js"></script>
+    <script
+      type="application/javascript"
+      src="https://api.ipify.org?format=jsonp&callback=get_viewers_ip"
+    ></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

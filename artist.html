@@ -25,18 +25,34 @@
       integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
       crossorigin="anonymous"
     />
+    <link rel="icon" href="imgs/spotifymainlogo.ico">
     <title>Artist Page</title>
   </head>
-  <body id="artist-body">
+  <body class="color-change-gray" id="artist-body">
     <!-- /*class="color-change-5x*/ -->
 
     <!--MAIN BODY-->
+
+    <div class="btn-group dropright">
+      <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fab fa-spotify"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="index.html">Home</a>
+        <a class="dropdown-item" href="artist.html">Search</a>
+        <a class="dropdown-item" href="album.html">Your library</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="Register.html">Sign Up</a>
+        <a class="dropdown-item" href="login.html">Login</a>
+      </div>
+    </div>
+
     <div class="container-fluid d-flex">
       <div class="row">
-        <div class="col col-12 col-md-4">
+        <div class="col col-12 col-lg-4">
           <div class="container d-flex flex-column mt-5">
             <div class="row mx-auto">
-              <img src="imgs/l2.jpg" width="300px" alt="album" />
+              <img class="img-fluid" src="imgs/l2.jpg" width="300px" alt="album" />
             </div>
             <div class="row text-center d-flex justify-content-center">
               <h1>Hybrid Theory (Bonus Edition)</h1>
@@ -56,7 +72,7 @@
             </div>
           </div>
         </div>
-        <div id="songList" class="col col-12 col-md-8">
+        <div id="songList" class="col col-12 col-lg-8">
           <div class="container d-flex flex-column mt-5">
             <div class="row d-flex justify-content-between">
               <div class="row">
@@ -84,7 +100,112 @@
                   alt="note"
                 />
                 <div class="col songTitle d-flex flex-column">
-                  <h5>Papercut</h5>
+                  <h5>One Step Closer</h5>
+                  <h6>Linkin Park</h6>
+                </div>
+              </div>
+              <div class="songLength">2:37</div>
+            </div>
+            <div class="row d-flex justify-content-between">
+              <div class="row">
+                <img
+                  src="imgs/note.png"
+                  height="15px"
+                  width="15px"
+                  alt="note"
+                />
+                <div class="col songTitle d-flex flex-column">
+                  <h5>With You</h5>
+                  <h6>Linkin Park</h6>
+                </div>
+              </div>
+              <div class="songLength">3:23</div>
+            </div>
+            <div class="row d-flex justify-content-between">
+              <div class="row">
+                <img
+                  src="imgs/note.png"
+                  height="15px"
+                  width="15px"
+                  alt="note"
+                />
+                <div class="col songTitle d-flex flex-column">
+                  <h5>Points of Authority</h5>
+                  <h6>Linkin Park</h6>
+                </div>
+              </div>
+              <div class="songLength">3:20</div>
+            </div>
+            <div class="row d-flex justify-content-between">
+              <div class="row">
+                <img
+                  src="imgs/note.png"
+                  height="15px"
+                  width="15px"
+                  alt="note"
+                />
+                <div class="col songTitle d-flex flex-column">
+                  <h5>Crawling</h5>
+                  <h6>Linkin Park</h6>
+                </div>
+              </div>
+              <div class="songLength">3:28</div>
+            </div>
+            <div class="row d-flex justify-content-between">
+              <div class="row">
+                <img
+                  src="imgs/note.png"
+                  height="15px"
+                  width="15px"
+                  alt="note"
+                />
+                <div class="col songTitle d-flex flex-column">
+                  <h5>Run Away</h5>
+                  <h6>Linkin Park</h6>
+                </div>
+              </div>
+              <div class="songLength">3:03</div>
+            </div>
+            <div class="row d-flex justify-content-between">
+              <div class="row">
+                <img
+                  src="imgs/note.png"
+                  height="15px"
+                  width="15px"
+                  alt="note"
+                />
+                <div class="col songTitle d-flex flex-column">
+                  <h5>By Myself</h5>
+                  <h6>Linkin Park</h6>
+                </div>
+              </div>
+              <div class="songLength">3:09</div>
+            </div>
+            <div class="row d-flex justify-content-between">
+              <div class="row">
+                <img
+                  src="imgs/note.png"
+                  height="15px"
+                  width="15px"
+                  alt="note"
+                />
+                <div class="col songTitle d-flex flex-column">
+                  <h5>In the End</h5>
+                  <h6>Linkin Park</h6>
+                </div>
+              </div>
+              <div class="songLength">3:36</div>
+            </div>
+            <div class="row d-flex justify-content-between">
+              <div class="row">
+                <img
+                  src="imgs/note.png"
+                  height="15px"
+                  width="15px"
+                  alt="note"
+                />
+                <div class="col songTitle d-flex flex-column">
+                  <h5>A Place for My Head</h5>
                   <h6>Linkin Park</h6>
                 </div>
               </div>
@@ -99,11 +220,11 @@
                   alt="note"
                 />
                 <div class="col songTitle d-flex flex-column">
-                  <h5>Papercut</h5>
+                  <h5>Forgotten</h5>
                   <h6>Linkin Park</h6>
                 </div>
               </div>
-              <div class="songLength">3:04</div>
+              <div class="songLength">3:14</div>
             </div>
             <div class="row d-flex justify-content-between">
               <div class="row">
@@ -114,11 +235,11 @@
                   alt="note"
                 />
                 <div class="col songTitle d-flex flex-column">
-                  <h5>Papercut</h5>
+                  <h5>Cure for the Itch</h5>
                   <h6>Linkin Park</h6>
                 </div>
               </div>
-              <div class="songLength">3:04</div>
+              <div class="songLength">2:37</div>
             </div>
             <div class="row d-flex justify-content-between">
               <div class="row">
@@ -129,11 +250,11 @@
                   alt="note"
                 />
                 <div class="col songTitle d-flex flex-column">
-                  <h5>Papercut</h5>
+                  <h5>Pushing Me Away</h5>
                   <h6>Linkin Park</h6>
                 </div>
               </div>
-              <div class="songLength">3:04</div>
+              <div class="songLength">3:11</div>
             </div>
             <div class="row d-flex justify-content-between">
               <div class="row">
@@ -144,11 +265,11 @@
                   alt="note"
                 />
                 <div class="col songTitle d-flex flex-column">
-                  <h5>Papercut</h5>
+                  <h5>My December</h5>
                   <h6>Linkin Park</h6>
                 </div>
               </div>
-              <div class="songLength">3:04</div>
+              <div class="songLength">4:20</div>
             </div>
             <div class="row d-flex justify-content-between">
               <div class="row">
@@ -159,11 +280,11 @@
                   alt="note"
                 />
                 <div class="col songTitle d-flex flex-column">
-                  <h5>Papercut</h5>
+                  <h5>High Voltage</h5>
                   <h6>Linkin Park</h6>
                 </div>
               </div>
-              <div class="songLength">3:04</div>
+              <div class="songLength">3:45</div>
             </div>
             <div class="row d-flex justify-content-between">
               <div class="row">
@@ -174,112 +295,7 @@
                   alt="note"
                 />
                 <div class="col songTitle d-flex flex-column">
-                  <h5>Papercut</h5>
-                  <h6>Linkin Park</h6>
-                </div>
-              </div>
-              <div class="songLength">3:04</div>
-            </div>
-            <div class="row d-flex justify-content-between">
-              <div class="row">
-                <img
-                  src="imgs/note.png"
-                  height="15px"
-                  width="15px"
-                  alt="note"
-                />
-                <div class="col songTitle d-flex flex-column">
-                  <h5>Papercut</h5>
-                  <h6>Linkin Park</h6>
-                </div>
-              </div>
-              <div class="songLength">3:04</div>
-            </div>
-            <div class="row d-flex justify-content-between">
-              <div class="row">
-                <img
-                  src="imgs/note.png"
-                  height="15px"
-                  width="15px"
-                  alt="note"
-                />
-                <div class="col songTitle d-flex flex-column">
-                  <h5>Papercut</h5>
-                  <h6>Linkin Park</h6>
-                </div>
-              </div>
-              <div class="songLength">3:04</div>
-            </div>
-            <div class="row d-flex justify-content-between">
-              <div class="row">
-                <img
-                  src="imgs/note.png"
-                  height="15px"
-                  width="15px"
-                  alt="note"
-                />
-                <div class="col songTitle d-flex flex-column">
-                  <h5>Papercut</h5>
-                  <h6>Linkin Park</h6>
-                </div>
-              </div>
-              <div class="songLength">3:04</div>
-            </div>
-            <div class="row d-flex justify-content-between">
-              <div class="row">
-                <img
-                  src="imgs/note.png"
-                  height="15px"
-                  width="15px"
-                  alt="note"
-                />
-                <div class="col songTitle d-flex flex-column">
-                  <h5>Papercut</h5>
-                  <h6>Linkin Park</h6>
-                </div>
-              </div>
-              <div class="songLength">3:04</div>
-            </div>
-            <div class="row d-flex justify-content-between">
-              <div class="row">
-                <img
-                  src="imgs/note.png"
-                  height="15px"
-                  width="15px"
-                  alt="note"
-                />
-                <div class="col songTitle d-flex flex-column">
-                  <h5>Papercut</h5>
-                  <h6>Linkin Park</h6>
-                </div>
-              </div>
-              <div class="songLength">3:04</div>
-            </div>
-            <div class="row d-flex justify-content-between">
-              <div class="row">
-                <img
-                  src="imgs/note.png"
-                  height="15px"
-                  width="15px"
-                  alt="note"
-                />
-                <div class="col songTitle d-flex flex-column">
-                  <h5>Papercut</h5>
-                  <h6>Linkin Park</h6>
-                </div>
-              </div>
-              <div class="songLength">3:04</div>
-            </div>
-            <div class="row d-flex justify-content-between">
-              <div class="row">
-                <img
-                  src="imgs/note.png"
-                  height="15px"
-                  width="15px"
-                  alt="note"
-                />
-                <div class="col songTitle d-flex flex-column">
-                  <h5>Papercut</h5>
+                  <h5>Papercut - Live at Yalding House</h5>
                   <h6>Linkin Park</h6>
                 </div>
               </div>
@@ -319,7 +335,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"
+              <a class="nav-link" href="artist.html"
                 ><svg
                   viewBox="0 0 512 512"
                   width="24"
@@ -337,7 +353,7 @@
             </li>
 
             <li class="nav-item active">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="album.html">
                 <svg
                   viewBox="0 0 512 512"
                   width="24"
@@ -378,13 +394,10 @@
               </li>
             </span>
 
-            <img
-              src="imgs/hero.jpg"
-              class="rounded-circle profile-pic"
-              width="20"
-              height="14"
-              alt=""
-            />
+            <img src="imgs/hero.jpg"  class =" rounded-circle profile-pic"  width="20" height="20"
+            alt=""> 
+            <p class="userName">Luca Perullo</p>
+           
           </ul>
         </div>
       </nav>
@@ -429,7 +442,7 @@
           </svg>
           <i
             class="far fa-play-circle mx-2 stop"
-            style="font-size: 30px; margin-top: -5px"
+            style="font-size: 30px; margin-top: -5px; width: 30px"
           ></i>
 
           <svg

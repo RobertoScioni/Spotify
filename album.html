@@ -17,20 +17,41 @@
       integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
       crossorigin="anonymous"
     />
+    <link rel="icon" href="imgs/spotifymainlogo.ico">
     <title>Album Page!</title>
   </head>
   <body id="album-body">
+
+    <div class="btn-group dropright">
+      <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fab fa-spotify"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="index.html">Home</a>
+        <a class="dropdown-item" href="artist.html">Search</a>
+        <a class="dropdown-item" href="album.html">Your library</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="Register.html">Sign Up</a>
+        <a class="dropdown-item" href="login.html">Login</a>
+      </div>
+    </div>
+
     <section id="album-banner" class="">
-    <div class="jumbotron py-0 align-items-center text-center ">
+    <div class="jumbotron py-0 align-items-center text-center">
      
         
         <div class="buttonbox">
           <p  class="text-center p-0 m-0 listeners">33,000,676 MONTHLY LISTENERS</p>
 
             <h1 id="groupName">Linkin Park</h1>
-        <button id="playbtn" class="btn-play">PLAY</button>
-        <button id="followbtn" class="btn-follow">FOLLOW</button>
-        <i class="fas fa-ellipsis-h mt-1"></i>
+        <button id="playbtn" class="btn-play d-none d-md-inline-block">PLAY</button>
+
+        <button id="followbtn" class="btn-follow d-none d-md-inline-block">FOLLOW</button>
+        <img src="imgs/i-play icon.png" width="31" class="btn-i-play d-inline-block d-md-none mr-3"/>
+        <img style="transform: rotate(90deg);" src="imgs/a-album-icon.png"  width="27" class="btn-a-album d-inline-block d-md-none mr-3"/>
+        <i class="fas fa-ellipsis-h mt-1 d-none d-md-inline-block"></i>
+        <i class="fas fa-ellipsis-h mt-1 d-inline-block d-md-none"></i>
+
     </div>
           <img style="width: 100%; height: 50vh;object-fit: cover;" class="img-fluid" src="imgs/hero.jpg" alt="album cover">
           <div class="wrapper-img"></div>
@@ -49,14 +70,15 @@
       
       <div class="row">
         <div class="tab-content" id="nav-tabContent">
-          <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list"> <!-- ALBUM CARDS -->
+          <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list"> 
+            <!-- ALBUM CARDS -->
             <div  class="container-fluid">
               <h1 style="color: white; font-size: 40px;margin-bottom: 50px;">Popular relases</h1>
               <div class="row">
                   <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
                     <div class="card">
                       <img
-                        src="/imgs/l1.jpg"
+                        src="imgs/l1.jpg"
                         class="card-img-top"
                         alt="..."
                       />
@@ -70,7 +92,7 @@
                   <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
                     <div class="card mr-5">
                       <img
-                        src="/imgs/l2.jpg"
+                        src="imgs/l2.jpg"
                         class="card-img-top"
                         alt="..."
                       />
@@ -84,7 +106,7 @@
                   <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
                     <div class="card mr-5">
                       <img
-                        src="/imgs/l3.jpg"
+                        src="imgs/l3.jpg"
                         class="card-img-top"
                         alt="..."
                       />
@@ -98,7 +120,7 @@
                   <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
                     <div class="card mr-5">
                       <img
-                        src="/imgs/l4.jpg"
+                        src="imgs/l4.jpg"
                         class="card-img-top"
                         alt="..."
                       />
@@ -112,7 +134,7 @@
                   <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
                     <div class="card mr-5">
                       <img
-                        src="/imgs/l5.jpg"
+                        src="imgs/l5.jpg"
                         class="card-img-top"
                         alt="..."
                       />
@@ -126,7 +148,7 @@
                   <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
                     <div class="card mr-5">
                       <img
-                        src="/imgs/l6.jpg"
+                        src="imgs/l6.jpg"
                         class="card-img-top"
                         alt="..."
                       />
@@ -143,7 +165,7 @@
                   <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
                     <div class="card mr-5">
                       <img
-                        src="/imgs/l6.jpg"
+                        src="imgs/l6.jpg"
                         class="card-img-top"
                         alt="..."
                       />
@@ -157,7 +179,7 @@
                   <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
                     <div class="card mr-5">
                       <img
-                        src="/imgs/l1.jpg"
+                        src="imgs/l1.jpg"
                         class="card-img-top"
                         alt="..."
                       />
@@ -171,7 +193,7 @@
                   <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
                     <div class="card mr-5">
                       <img
-                        src="/imgs/l1.jpg"
+                        src="imgs/l1.jpg"
                         class="card-img-top"
                         alt="..."
                       />
@@ -185,7 +207,7 @@
                   <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
                     <div class="card mr-5">
                       <img
-                        src="/imgs/l1.jpg"
+                        src="imgs/l1.jpg"
                         class="card-img-top"
                         alt="..."
                       />
@@ -199,7 +221,7 @@
                   <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
                     <div class="card mr-5">
                       <img
-                        src="/imgs/l1.jpg"
+                        src="imgs/l1.jpg"
                         class="card-img-top"
                         alt="..."
                       />
@@ -213,93 +235,7 @@
                   <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
                     <div class="card mr-5">
                       <img
-                        src="/imgs/l1.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                      </div>
-                      <div class="card-body album">
-                        <p class="card-text">Lo-Fi Beats</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card mr-5">
-                      <img
-                        src="/imgs/l1.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                      </div>
-                      <div class="card-body album">
-                        <p class="card-text">Lo-Fi Beats</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card mr-5">
-                      <img
-                        src="/imgs/l1.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                      </div>
-                      <div class="card-body album">
-                        <p class="card-text">Lo-Fi Beats</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card mr-5">
-                      <img
-                        src="/imgs/l1.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                      </div>
-                      <div class="card-body album">
-                        <p class="card-text">Lo-Fi Beats</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card mr-5">
-                      <img
-                        src="/imgs/l1.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                      </div>
-                      <div class="card-body album">
-                        <p class="card-text">Lo-Fi Beats</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card mr-5">
-                      <img
-                        src="/imgs/l1.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                      </div>
-                      <div class="card-body album">
-                        <p class="card-text">Lo-Fi Beats</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card mr-5">
-                      <img
-                        src="/imgs/l1.jpg"
+                        src="imgs/l1.jpg"
                         class="card-img-top"
                         alt="..."
                       />
@@ -315,7 +251,7 @@
                   <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
                     <div class="card mr-5">
                       <img
-                        src="/imgs/l1.jpg"
+                        src="imgs/l1.jpg"
                         class="card-img-top"
                         alt="..."
                       />
@@ -329,7 +265,7 @@
                   <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
                     <div class="card mr-5">
                       <img
-                        src="/imgs/l1.jpg"
+                        src="imgs/l1.jpg"
                         class="card-img-top"
                         alt="..."
                       />
@@ -343,7 +279,7 @@
                   <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
                     <div class="card mr-5">
                       <img
-                        src="/imgs/l1.jpg"
+                        src="imgs/l1.jpg"
                         class="card-img-top"
                         alt="..."
                       />
@@ -357,7 +293,7 @@
                   <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
                     <div class="card mr-5">
                       <img
-                        src="/imgs/l1.jpg"
+                        src="imgs/l1.jpg"
                         class="card-img-top"
                         alt="..."
                       />
@@ -371,7 +307,7 @@
                   <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
                     <div class="card mr-5">
                       <img
-                        src="/imgs/l1.jpg"
+                        src="imgs/l1.jpg"
                         class="card-img-top"
                         alt="..."
                       />
@@ -385,93 +321,7 @@
                   <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
                     <div class="card mr-5">
                       <img
-                        src="/imgs/l1.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                      </div>
-                      <div class="card-body album">
-                        <p class="card-text">Lo-Fi Beats</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card mr-5">
-                      <img
-                        src="/imgs/l1.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                      </div>
-                      <div class="card-body album">
-                        <p class="card-text">Lo-Fi Beats</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card mr-5">
-                      <img
-                        src="/imgs/l1.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                      </div>
-                      <div class="card-body album">
-                        <p class="card-text">Lo-Fi Beats</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card mr-5">
-                      <img
-                        src="/imgs/l1.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                      </div>
-                      <div class="card-body album">
-                        <p class="card-text">Lo-Fi Beats</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card mr-5">
-                      <img
-                        src="/imgs/l1.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                      </div>
-                      <div class="card-body album">
-                        <p class="card-text">Lo-Fi Beats</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card mr-5">
-                      <img
-                        src="/imgs/l1.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                      </div>
-                      <div class="card-body album">
-                        <p class="card-text">Lo-Fi Beats</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card mr-5">
-                      <img
-                        src="/imgs/l1.jpg"
+                        src="imgs/l1.jpg"
                         class="card-img-top"
                         alt="..."
                       />
@@ -487,7 +337,7 @@
                   <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
                     <div class="card mr-5">
                       <img
-                        src="/imgs/l1.jpg"
+                        src="imgs/l1.jpg"
                         class="card-img-top"
                         alt="..."
                       />
@@ -501,7 +351,7 @@
                   <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
                     <div class="card mr-5">
                       <img
-                        src="/imgs/l1.jpg"
+                        src="imgs/l1.jpg"
                         class="card-img-top"
                         alt="..."
                       />
@@ -515,7 +365,7 @@
                   <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
                     <div class="card mr-5">
                       <img
-                        src="/imgs/l1.jpg"
+                        src="imgs/l1.jpg"
                         class="card-img-top"
                         alt="..."
                       />
@@ -529,7 +379,7 @@
                   <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
                     <div class="card mr-5">
                       <img
-                        src="/imgs/l1.jpg"
+                        src="imgs/l1.jpg"
                         class="card-img-top"
                         alt="..."
                       />
@@ -543,7 +393,7 @@
                   <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
                     <div class="card mr-5">
                       <img
-                        src="/imgs/l1.jpg"
+                        src="imgs/l1.jpg"
                         class="card-img-top"
                         alt="..."
                       />
@@ -557,7 +407,179 @@
                   <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
                     <div class="card mr-5">
                       <img
-                        src="/imgs/l1.jpg"
+                        src="imgs/l1.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                      </div>
+                      <div class="card-body album">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card mr-5">
+                      <img
+                        src="imgs/l1.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                      </div>
+                      <div class="card-body album">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card mr-5">
+                      <img
+                        src="imgs/l1.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                      </div>
+                      <div class="card-body album">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card mr-5">
+                      <img
+                        src="imgs/l1.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                      </div>
+                      <div class="card-body album">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card mr-5">
+                      <img
+                        src="imgs/l1.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                      </div>
+                      <div class="card-body album">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card mr-5">
+                      <img
+                        src="imgs/l1.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                      </div>
+                      <div class="card-body album">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card mr-5">
+                      <img
+                        src="imgs/l1.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                      </div>
+                      <div class="card-body album">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card mr-5">
+                      <img
+                        src="imgs/l1.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                      </div>
+                      <div class="card-body album">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card mr-5">
+                      <img
+                        src="imgs/l1.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                      </div>
+                      <div class="card-body album">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card mr-5">
+                      <img
+                        src="imgs/l1.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                      </div>
+                      <div class="card-body album">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card mr-5">
+                      <img
+                        src="imgs/l1.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                      </div>
+                      <div class="card-body album">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card mr-5">
+                      <img
+                        src="imgs/l1.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="imgIcon">
+                      </div>
+                      <div class="card-body album">
+                        <p class="card-text">Lo-Fi Beats</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+                    <div class="card mr-5">
+                      <img
+                        src="imgs/l1.jpg"
                         class="card-img-top"
                         alt="..."
                       />
@@ -571,191 +593,171 @@
                 </div>
       </div>
       </div>
-          <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">   <div  class="container-fluid">
-            <h1 style="color: white; font-size: 40px;margin-bottom: 50px;">Popular relases</h1>
+          <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list"> 
+              <div  class="container-fluid">
             <div class="row">
                 <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
                   <div class="card">
                     <img
-                      src="/imgs/l1.jpg"
-                      class="card-img-top"
+                      src="imgs/l1.jpg"
+                      class="card-img-top related"
                       alt="..."
                     />
                     <div class="imgIcon">
                     </div>
-                    <div class="card-body album">
-                      <p class="card-text">Lo-Fi Beats</p>
+                    <div class="card-body">
+                      <p class="card-text">Papa Roach</p>
                     </div>
                   </div>
                 </div>
                 <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
                   <div class="card mr-5">
                     <img
-                      src="/imgs/l2.jpg"
-                      class="card-img-top"
+                      src="imgs/hoobastank.jpg"
+                      class="card-img-top related"
                       alt="..."
                     />
                     <div class="imgIcon">
                     </div>
-                    <div class="card-body album">
-                      <p class="card-text">Lo-Fi Beats</p>
+                    <div class="card-body">
+                      <p class="card-text">Hoobastank</p>
                     </div>
                   </div>
                 </div>
                 <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
                   <div class="card mr-5">
                     <img
-                      src="/imgs/l3.jpg"
-                      class="card-img-top"
+                      src="imgs/breabenj.jpg"
+                      class="card-img-top related"
                       alt="..."
                     />
                     <div class="imgIcon">
                     </div>
-                    <div class="card-body album">
-                      <p class="card-text">Lo-Fi Beats</p>
+                    <div class="card-body">
+                      <p class="card-text">Breaking Benjamin</p>
                     </div>
                   </div>
                 </div>
                 <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
                   <div class="card mr-5">
                     <img
-                      src="/imgs/l4.jpg"
-                      class="card-img-top"
+                      src="imgs/3dgrace.jpg"
+                      class="card-img-top related"
                       alt="..."
                     />
                     <div class="imgIcon">
                     </div>
-                    <div class="card-body album">
-                      <p class="card-text">Lo-Fi Beats</p>
+                    <div class="card-body">
+                      <p class="card-text">Three Days Grace</p>
                     </div>
                   </div>
                 </div>
                 <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
                   <div class="card mr-5">
                     <img
-                      src="/imgs/l5.jpg"
-                      class="card-img-top"
+                      src="imgs/seether.png"
+                      class="card-img-top related"
                       alt="..."
                     />
                     <div class="imgIcon">
                     </div>
-                    <div class="card-body album">
-                      <p class="card-text">Lo-Fi Beats</p>
+                    <div class="card-body">
+                      <p class="card-text">Seether</p>
                     </div>
                   </div>
                 </div>
                 <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
                   <div class="card mr-5">
                     <img
-                      src="/imgs/l6.jpg"
-                      class="card-img-top"
+                      src="imgs/p.o.d.jpg"
+                      class="card-img-top related"
                       alt="..."
                     />
                     <div class="imgIcon">
                     </div>
-                    <div class="card-body album">
-                      <p class="card-text">Lo-Fi Beats</p>
+                    <div class="card-body">
+                      <p class="card-text">P.O.D</p>
                     </div>
+                  </div>
+                </div>
+              </div>  
+            </div>
+            </div>
+    
+
+          <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+            <div class="container-fluid">             
+               <div class="row">
+                <div class="col-sm-12 col-xl-8">
+                  
+                  <div class="card text-white">
+                    <img src="imgs/artist(luca)page/linkin.webp" class="card-img img-fluid" alt="..." style="width: auto;">
+                    <div class="rankIcon">
+                      <h4>#112</h4>
+                      <p>in the world</p>
+                    </div>
+                    <div class="card-img-overlay d-flex justify-content-end align-items-center flex-column">
+                      <h5 class="card-title align-self-start">21,309,743 monthly listeners</h5>
+                      <p class="card-text">Rooted at the crossroads of aggresive metal and beat-driven hip-hop, Linkin Park became one of the most successful acts of the early 21st century by incorporating elements from across genres, injecting hardcore rap, raucous punk, atmospheric...</p>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 mt-sm-4 col-xl-4 mt-xl-0">
+                  <div class="container d-flex flex-column"></div>
+                  <div class="card mb-3" >
+                    <div class="row no-gutters">
+                      <div class="col-2 col-lg-3">
+                        <img style="width: 80px!important;height: 80px!important;" src="imgs/artist(luca)page/date temp.png" height="100px" width="100px" class="card-img" alt="october tour">
+                      </div>
+                      <div class="col-10 col-lg-9 d-flex align-items-center">
+                        <div class="card-body">
+                          
+                          <p class="card-text mb-0">Rescheduled - Fake Tour</p>
+                          <p class="card-text text-muted">Mon 7:30 AM • Kursaal Oostende</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card mb-3" >
+                    <div class="row no-gutters">
+                      <div class="col-2 col-lg-3">
+                        <img style="width: 80px!important;height: 80px!important;" src="imgs/artist(luca)page/25dec.png" height="100px" width="100px" class="card-img" alt="december tour">
+                      </div>
+                      <div class="col-10 col-lg-9 d-flex align-items-center">
+                        <div class="card-body">
+                          
+                          <p class="card-text mb-0">Reschduled again - Another Fake Tour</p>
+                          <p class="card-text text-muted">Fri 6:00 PM • ACCOR ARENA, Paris</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card mb-3" >
+                    <div class="row no-gutters">
+                      <div class="col-2 col-lg-3">
+                        <img style="width: 80px!important;height: 80px!important;" src="imgs/artist(luca)page/JAN31.png" height="100px" width="100px"  class="card-img" alt="jan tour">
+                      </div>
+                      <div class="col-10 col-lg-9 d-flex align-items-center">
+                        <div class="card-body">
+                          
+                          <p class="card-text mb-0">Rescheduled - Look, There's No Tour</p>
+                          <p class="card-text text-muted">Sat 6:00 PM • Space, The Final Frontier</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   </div>
                 </div>
               </div>
-              <h1 style="color: white; font-size: 40px;margin-bottom: 50px;">Featuring Linking Park</h1>
-              <div class="row">
-                <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                  <div class="card mr-5">
-                    <img
-                      src="/imgs/l6.jpg"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="imgIcon">
-                    </div>
-                    <div class="card-body album">
-                      <p class="card-text">Lo-Fi Beats</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                  <div class="card mr-5">
-                    <img
-                      src="/imgs/l1.jpg"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="imgIcon">
-                    </div>
-                    <div class="card-body album">
-                      <p class="card-text">Lo-Fi Beats</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                  <div class="card mr-5">
-                    <img
-                      src="/imgs/l1.jpg"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="imgIcon">
-                    </div>
-                    <div class="card-body album">
-                      <p class="card-text">Lo-Fi Beats</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                  <div class="card mr-5">
-                    <img
-                      src="/imgs/l1.jpg"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="imgIcon">
-                    </div>
-                    <div class="card-body album">
-                      <p class="card-text">Lo-Fi Beats</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                  <div class="card mr-5">
-                    <img
-                      src="/imgs/l1.jpg"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="imgIcon">
-                    </div>
-                    <div class="card-body album">
-                      <p class="card-text">Lo-Fi Beats</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                  <div class="card mr-5">
-                    <img
-                      src="/imgs/l1.jpg"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="imgIcon">
-                    </div>
-                    <div class="card-body album">
-                      <p class="card-text">Lo-Fi Beats</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            
-               
-            
-            
-              </div>
-    </div></div>
-          <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list"></div>
-        </div>
-      </div>
+            </div>
+          </div>
     </div>
+               <!-- Finish of artist Related  -->
+            
+            
+            
+             
     <footer>
 
 <!--START OF SIDE-NAV-->
@@ -776,14 +778,14 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"
+            <a class="nav-link" href="artist.html"
               ><svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="currentColor" fill-rule="evenodd"></path></svg>
               Search</a
             >
           </li>
 
           <li class="nav-item  active">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="album.html">
               <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="currentColor"></path></svg>
               Your library
             </a>
@@ -795,12 +797,12 @@
                     <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
                   </svg> Install App</a>
               </li>
-        </span>
-   
-            <img src="imgs/hero.jpg"  class =" rounded-circle profile-pic"  width="20" height="14"
+          </span>
+          
+            <img src="imgs/hero.jpg"  class =" rounded-circle profile-pic"  width="20" height="20"
             alt=""> 
-       
-          </div>
+            <p class="userName">Luca Perullo</p>
+           
         </ul>
       </div>
     </nav>

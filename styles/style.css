@@ -75,7 +75,7 @@ i {
 .dividers strong {
   position: absolute;
   top: -12px;
-  left: 170px;
+  left: 186.4px;
   font-family: "Circular-bold";
   font-size: 12px;
 
@@ -94,6 +94,10 @@ form label {
 
 form a:hover {
   color: #15883e;
+}
+
+#loginPage .form-check {
+  padding-left: 0;
 }
 
 .box .btn {
@@ -268,6 +272,10 @@ input[type="checkbox"]:checked + label:before {
   color: white;
 }
 
+#homePage .btnsign-up:focus {
+  outline: none;
+}
+
 #homePage .btnlogin {
   position: absolute;
   left: 15px;
@@ -297,6 +305,10 @@ input[type="checkbox"]:checked + label:before {
   color: white;
 }
 
+#homePage .btnlogin:focus {
+  outline: none;
+}
+
 #homePage .text-bottom {
   position: absolute;
   margin-top: 0;
@@ -308,14 +320,6 @@ input[type="checkbox"]:checked + label:before {
   padding-right: 25px;
   left: 60px;
   font-size: 13px;
-}
-
-.profile-nav {
-  position: absolute;
-  margin: auto;
-  bottom: 35px;
-  padding-right: 20px;
-  border-bottom: 1px solid lightgray;
 }
 
 /**** BODY ****/
@@ -527,6 +531,11 @@ body#homePage {
   background-color: rgba(22, 21, 21, 0.898);
   color: white;
 }
+
+#album-body #album-banner .btn-follow:focus {
+  outline: none;
+}
+
 #album-body #album-banner .btn-play,
 #artist-body .btn-play {
   margin-right: 10px;
@@ -553,6 +562,12 @@ body#homePage {
   background-color: rgba(22, 21, 21, 0.898);
   color: white;
 }
+
+#album-body #album-banner .btn-play:focus,
+#artist-body .btn-play:focus {
+  outline: none;
+}
+
 #album-body #groupName {
   z-index: 100;
 
@@ -580,8 +595,9 @@ body#homePage {
   cursor: pointer;
 }
 #album-body #containerfix {
-  padding-left: 41vh;
-  padding-right: 17vh;
+  padding-left: 20vh;
+  padding-right: 2vw;
+  padding-bottom: 100px;
 }
 #album-body .row {
   margin-bottom: 10px;
@@ -601,6 +617,11 @@ body#homePage {
 
 #album-body #list-messages .card {
   width: auto;
+}
+
+#album-body #list-messages .card-body {
+  padding: 0;
+  font-size: 12px;
 }
 
 .contentnav {
@@ -715,18 +736,25 @@ body#homePage {
 .profile-nav {
   position: absolute;
   margin: auto;
-  bottom: 35px;
+  bottom: 50px;
   padding-right: 20px;
   border-bottom: 1px solid lightgray;
 }
 .profile-pic {
   position: absolute;
-  bottom: 15px;
+  bottom: 17px;
   margin: auto;
+}
+.userName {
+  position: absolute;
+  bottom: 0px;
+  left: 45px;
+  color: white;
 }
 .player-container {
   position: fixed;
   bottom: 0;
+  left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -916,7 +944,40 @@ ul > .nav-item:hover::before {
     background: #061c4f;
   }
 }
-
+@-webkit-keyframes color-change-gray {
+  0% {
+    background: hsl(0, 0%, 8%);
+  }
+  25% {
+    background: hsl(240, 3%, 7%);
+  }
+  50% {
+    background: hsl(300, 21%, 5%);
+  }
+  75% {
+    background: hsl(138, 36%, 5%);
+  }
+  100% {
+    background: hsl(76, 48%, 5%);
+  }
+}
+@keyframes color-change-gray {
+  0% {
+    background: hsl(0, 0%, 8%);
+  }
+  25% {
+    background: hsl(240, 3%, 7%);
+  }
+  50% {
+    background: hsl(300, 21%, 5%);
+  }
+  75% {
+    background: hsl(138, 36%, 5%);
+  }
+  100% {
+    background: hsl(76, 48%, 5%);
+  }
+}
 @-webkit-keyframes pulsate-bck {
   0% {
     -webkit-transform: scale(1);
@@ -1131,7 +1192,10 @@ body#artist-body {
 #artist-body > .container-fluid {
   padding-left: 20vw;
 }
-
+.color-change-gray {
+  -webkit-animation: color-change-gray 6s linear infinite alternate both;
+  animation: color-change-gray 6s linear infinite alternate both;
+}
 .color-change-5x {
   -webkit-animation: color-change-5x 10s linear infinite alternate both;
   animation: color-change-5x 10s linear infinite alternate both;
@@ -1165,21 +1229,31 @@ i:hover {
 }
 
 #songList {
-  color: white;
+  color: rgb(132, 130, 130);
   padding-left: 90px;
 }
 
 #songList > .container > .row {
   margin-top: 10px;
+  transition: all 0s !important;
+}
+
+#songList > .container .row:hover {
+  color: whitesmoke;
+  text-decoration: underline;
+  border-radius: 10px;
+  transition: 0s all;
 }
 
 #songList h5,
 #songList .songLength {
+  transition: all 0s !important;
   font-size: 14px;
   margin-bottom: 5px;
 }
 
 #songList h6 {
+  transition: all 0s !important;
   font-size: 12px;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -1195,7 +1269,7 @@ i:hover {
 }
 .card-img-top:hover {
   border-radius: 0;
-
+  z-index: 15;
   -webkit-animation: kenburns-left 0.25s ease-out both;
   animation: kenburns-left 0.25s ease-out both;
 }
@@ -1235,7 +1309,7 @@ i:hover {
   font-family: "Circular-bold";
   src: url("/fonts/lineto-circular-pro-bold.ttf") format("woff2");
 }
-@media (max-width: 605px) {
+@media (max-width: 992px) {
   .list-group {
     justify-content: center;
   }
@@ -1265,7 +1339,7 @@ i:hover {
   }
 
   #homePage #nav-tabContent > div > .container-fluid {
-    padding: 0 22%;
+    padding: 0;
     padding-bottom: 100px;
   }
 
@@ -1351,8 +1425,21 @@ i:hover {
     font-size: 30px;
   }
 
-  .dropright .dropdown-toggle::after {
+  #artist-body .dropright .dropdown-toggle::after {
     margin-left: 10px;
+  }
+
+  #songList > .container {
+    width: auto;
+  }
+
+  #artist-body > .container-fluid > .row > .col > .container {
+    width: auto;
+    padding-right: 0;
+  }
+
+  #songList .songLength {
+    padding-right: 10px;
   }
 
   .dropdown-menu {
@@ -1360,6 +1447,9 @@ i:hover {
     background-color: transparent;
     backdrop-filter: blur(4px);
     padding: 0 0;
+    width: 98vw;
+    text-align: center;
+    position: relative;
   }
 
   .dropdown-item {
@@ -1367,8 +1457,12 @@ i:hover {
   }
 
   .dropdown-item:hover {
-    border-left: 7px solid green;
-    background-color: white;
+    content: "";
+    border-left: 200px solid rgba(0, 0, 0, 0.111);
+    border-right: 200px solid rgba(0, 0, 0, 0.118);
+    backdrop-filter: blur(4px);
+    background-color: transparent;
+    color: white;
   }
 
   .dropdown-item:first-of-type:hover {
@@ -1377,6 +1471,24 @@ i:hover {
 
   .dropdown-item:last-of-type:hover {
     border-radius: 0 0 0 0.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #loginPage .container > .container {
+    padding: 0;
+  }
+
+  #loginPage .btn-success {
+    width: 450px;
+  }
+
+  #loginPage .container > .container div.col-12:last-of-type {
+    padding: 0;
+  }
+
+  #loginPage .form-check {
+    padding-left: 1.25rem;
   }
 }
 

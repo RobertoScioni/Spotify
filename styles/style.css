@@ -241,7 +241,7 @@ input[type="checkbox"]:checked + label:before {
   height: 90%;
   width: 220px;
   display: block;
-  z-index: 10;
+  z-index: 5;
 }
 
 #homePage .btnsign-up {
@@ -362,7 +362,7 @@ body#homePage {
   bottom: -5px;
   left: 35%;
   background-color: lightgreen;
-  z-index: 5;
+  z-index: 6;
 }
 
 #mainNav .list-group-item:hover {
@@ -511,7 +511,7 @@ body#homePage {
 }
 #album-body #album-banner .btn-follow {
   margin-right: 17px;
-  z-index: 100;
+  z-index: 6;
   border: 1px solid #fff;
   color: #fff;
   border-radius: 50px;
@@ -539,7 +539,7 @@ body#homePage {
 #album-body #album-banner .btn-play,
 #artist-body .btn-play {
   margin-right: 10px;
-  z-index: 100;
+  z-index: 6;
   color: #fff;
   border-radius: 50px;
   background-color: #15883e !important;
@@ -573,7 +573,7 @@ body#homePage {
 }
 
 #album-body #groupName {
-  z-index: 100;
+  z-index: 6;
 
   color: white;
   font-size: 50px;
@@ -586,7 +586,7 @@ body#homePage {
   top: 20%;
   width: auto;
   height: 100px;
-  z-index: 100000;
+  z-index: 4;
 }
 .buttonbox > p {
   padding-bottom: 50px;
@@ -660,7 +660,7 @@ body#homePage {
   margin-bottom: 20px;
   position: absolute;
   top: 90%;
-  z-index: 10;
+  z-index: 7;
 }
 #album-body .list-group-item {
   text-align: center;
@@ -696,7 +696,7 @@ body#homePage {
   background-color: transparent;
 }
 .navbar:not(.loginNav) {
-  z-index: 1000000;
+  z-index: 100;
   background-color: #010103;
   position: fixed;
   top: 0;
@@ -1251,7 +1251,6 @@ body#artist-body {
 #album-body i:hover {
   font-size: 17px;
   color: #ffffff;
-  z-index: 2;
 }
 i:hover {
   color: white;
@@ -1301,7 +1300,7 @@ i:hover {
 }
 .card-img-top:hover {
   border-radius: 0;
-  z-index: 15;
+  z-index: 1;
   -webkit-animation: kenburns-left 0.25s ease-out both;
   animation: kenburns-left 0.25s ease-out both;
 }
@@ -1425,7 +1424,7 @@ i:hover {
     position: fixed;
     top: 10%;
     background-color: transparent;
-    z-index: 1000000;
+    z-index: 5;
   }
 
   .dropright .btn:focus {
@@ -1440,6 +1439,7 @@ i:hover {
   .dropright .btn {
     color: white;
     font-size: 30px;
+    z-index: 11;
   }
 
   .dropright .btn {
@@ -1483,6 +1483,7 @@ i:hover {
   }
 
   .dropdown-menu {
+    z-index: 10 !important;
     color: white;
     background-color: transparent;
     backdrop-filter: blur(4px);
@@ -1495,7 +1496,9 @@ i:hover {
   .dropdown-item {
     color: white;
   }
-
+  .btn.dropdown-toggle {
+    z-index: 100;
+  }
   .dropdown-item:hover {
     content: "";
     border-left: 200px solid rgba(0, 0, 0, 0.111);

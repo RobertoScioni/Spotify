@@ -208,15 +208,15 @@
         
             <div class=" messagecheck form-check  mt-3 mb-3 ">
               
-                <input type="checkbox" id="checkboxed" name="check" value="checkboxy">
-                <label for="checkboxed">  <span>I want to receive Spotify marketing messages.</span> </label>
+                <input type="checkbox" id="checkboxedMarketing" name="check" value="checkboxy">
+                <label for="checkboxedMarketing">  <span>I want to receive Spotify marketing messages.</span> </label>
             </div>
         
           
             <div class="form-check  mt-3 mb-3 ">
               
-                <input type="checkbox" id="checkboxed" name="check" value="checkboxy">
-                <label for="checkboxed"> <span>Share my registration data with the content providers on Spotify. This information may be used for marketing purposes. Note: according to our privacy policy, your data may be sent to a country outside the EEA.</span> </label>
+                <input type="checkbox" id="checkboxedData" name="check" value="checkboxy">
+                <label for="checkboxedData"> <span>Share my registration data with the content providers on Spotify. This information may be used for marketing purposes. Note: according to our privacy policy, your data may be sent to a country outside the EEA.</span> </label>
             </div>
         
         
@@ -225,8 +225,8 @@
         <div class="form-check  mt-3 mb-3  px-0">
 
               
-            <input type="checkbox" id="checkboxed" name="check" value="checkboxy">
-            <label for="checkboxed">I agree to Spotify's <a href="https://www.spotify.com/us/legal/end-user-agreement/">Terms</a>   and <a href="https://www.spotify.com/us/legal/privacy-policy/">Privacy Policy .</a> </label>
+            <input type="checkbox" id="checkboxedTerms" name="check" value="checkboxy">
+            <label for="checkboxedTerms">I agree to Spotify's <a href="https://www.spotify.com/us/legal/end-user-agreement/">Terms</a>   and <a href="https://www.spotify.com/us/legal/privacy-policy/">Privacy Policy .</a> </label>
         </div>
      
   
@@ -253,6 +253,28 @@
     
 
 
+    <div id="captcha" class="d-flex">
+      <div id="captchaImage" class="d-flex flex-column justify-content-center">
+        <div class="mx-auto">
+          <img src="/imgs/logo_48.png" alt="" width="40px" />
+        </div>
+        <div class="d-flex justify-content-between mx-2">
+          <a href="#">Privacy</a><span>-</span><a href="#">Terms</a>
+        </div>
+      </div>
+      <div
+        id="captchaText"
+        class="d-flex flex-column align-items-start justify-content-center"
+      >
+        <p class="my-0">
+          protected by <span style="font-weight: 600">reCAPTCHA</span>
+        </p>
+        <div class="d-flex">
+          <a href="#">Privacy </a> <span class="mx-1">-</span>
+          <a href="#"> Terms</a>
+        </div>
+      </div>
+    </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 

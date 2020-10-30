@@ -554,6 +554,10 @@ body#homePage {
   border-color: transparent;
 }
 
+#artist-body .btn-play {
+  margin-right: 0;
+}
+
 #album-body #album-banner .btn-play:hover,
 #artist-body .btn-play:hover {
   box-shadow: 0 1px 3px 0 hsla(100, 95%, 40%, 0.149),
@@ -617,11 +621,39 @@ body#homePage {
 
 #album-body #list-messages .card {
   width: auto;
+  position: relative;
 }
 
 #album-body #list-messages .card-body {
   padding: 0;
-  font-size: 12px;
+  font-size: 16px;
+  text-align: left;
+}
+
+#album-body .card .rankIcon {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  border-radius: 100%;
+  background-color: rgb(46, 119, 208);
+  width: 90px;
+  height: 90px;
+  top: 10%;
+  right: 10%;
+  z-index: 5;
+}
+
+#album-body .card .rankIcon h4 {
+  font-size: 28px;
+  margin-bottom: 0;
+  padding-top: 10px;
+}
+
+#album-body .card .rankIcon p {
+  font-size: 13px;
 }
 
 .contentnav {
@@ -1431,6 +1463,14 @@ i:hover {
 
   #songList > .container {
     width: auto;
+  }
+
+  #artist-body > .container-fluid {
+    padding-bottom: 120px;
+  }
+
+  #artist-body > .container-fluid > .row {
+    width: 100%;
   }
 
   #artist-body > .container-fluid > .row > .col > .container {

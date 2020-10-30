@@ -1558,7 +1558,7 @@ label > span {
   height: 4px;
   width: 300px;
   position: absolute;
-  bottom: 1px;
+  bottom: 15px;
   right: -150px;
   z-index: 5;
 }
@@ -1787,6 +1787,10 @@ label > span {
     bottom: -3vh;
   }
 
+  .progress-container {
+    bottom: 2vh;
+  }
+
   .player-container .slider > p:first-of-type {
     left: 20vw;
     bottom: -3vh;
@@ -1811,7 +1815,7 @@ label > span {
 
   .singer-player .title {
     position: absolute;
-    font-size: 12px;
+    font-size: 5px;
     left: -18px;
     bottom: -20px;
   }

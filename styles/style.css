@@ -1309,7 +1309,7 @@ i:hover {
   font-family: "Circular-bold";
   src: url("/fonts/lineto-circular-pro-bold.ttf") format("woff2");
 }
-@media (max-width: 605px) {
+@media (max-width: 992px) {
   .list-group {
     justify-content: center;
   }

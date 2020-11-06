@@ -1,1913 +1,1670 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-      crossorigin="anonymous"
-    />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+			integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+			crossorigin="anonymous"
+		/>
 
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
-      crossorigin="anonymous"
-    />
-    <link href="/favicon.ico" type="image/x-icon" rel="icon" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+			integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+			crossorigin="anonymous"
+		/>
+		<link href="/favicon.ico" type="image/x-icon" rel="icon" />
 
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="icon" href="imgs/spotifymainlogo.ico" />
-    <title>Spotify - Web Player</title>
-  </head>
-  <body class="color-change-5x" id="homePage">
-    <!-- Start of navbar -->
-    <nav
-      class="navbar navbar-expand-sm navbar-dark navbar-fixed-left fixed-left"
-    >
-      <a class="navbar-brand" href="#">
-        <img src="imgs/Spotify_Logo_White.png" width="140" height="42"
-      /></a>
+		<link rel="stylesheet" href="styles/style.css" />
+		<link rel="icon" href="imgs/spotifymainlogo.ico" />
+		<script src="index.js"></script>
+		<title>Spotify - Web Player</title>
+	</head>
+	<body class="color-change-5x" id="homePage">
+		<!-- Start of navbar -->
+		<nav
+			class="navbar navbar-expand-sm navbar-dark navbar-fixed-left fixed-left"
+		>
+			<a class="navbar-brand" href="#">
+				<img src="imgs/Spotify_Logo_White.png" width="140" height="42"
+			/></a>
 
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav d-flex flex-column mt-3">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">
-              <svg
-                viewBox="0 0 512 512"
-                width="24"
-                height="24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z"
-                  fill="currentColor"
-                ></path>
-              </svg>
-              Home <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="artist.html"
-              ><svg
-                viewBox="0 0 512 512"
-                width="24"
-                height="24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z"
-                  fill="currentColor"
-                  fill-rule="evenodd"
-                ></path>
-              </svg>
-              Search</a
-            >
-          </li>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav d-flex flex-column mt-3">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">
+							<svg
+								viewBox="0 0 512 512"
+								width="24"
+								height="24"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z"
+									fill="currentColor"
+								></path>
+							</svg>
+							Home <span class="sr-only">(current)</span></a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="artist.html"
+							><svg
+								viewBox="0 0 512 512"
+								width="24"
+								height="24"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z"
+									fill="currentColor"
+									fill-rule="evenodd"
+								></path>
+							</svg>
+							Search</a
+						>
+					</li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="album.html">
-              <svg
-                viewBox="0 0 512 512"
-                width="24"
-                height="24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z"
-                  fill="currentColor"
-                ></path>
-              </svg>
-              Your library
-            </a>
-          </li>
-          <div class="d-flex flex-column">
-            <li class="nav-item">
-              <a class="nav-link" href="Register.html">
-                <button type="button" class="btnsign-up">Sign UP</button>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="login.html">
-                <button type="button" class="btnlogin">Login</button>
-              </a>
-            </li>
-            <div class="row text-bottom d-flex flex-column">
-              <div class="row d-flex flex-row">
-                <p class="text-secondary my-0 py-0 ml-3 mr-1">Cookie</p>
-                <p class="text-secondary lignenav my-0 py-0 ml-3">Privacy</p>
-              </div>
-              <div>
-                <p id="view_count_header"></p>
-                <div id="view_count_container">
-                  <p
-                    style="margin-bottom: 0 !important"
-                    id="view_count_text"
-                  ></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </ul>
-      </div>
-    </nav>
+					<li class="nav-item">
+						<a class="nav-link" href="album.html">
+							<svg
+								viewBox="0 0 512 512"
+								width="24"
+								height="24"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z"
+									fill="currentColor"
+								></path>
+							</svg>
+							Your library
+						</a>
+					</li>
+					<div class="d-flex flex-column">
+						<li class="nav-item">
+							<a class="nav-link" href="Register.html">
+								<button type="button" class="btnsign-up">Sign UP</button>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="login.html">
+								<button type="button" class="btnlogin">Login</button>
+							</a>
+						</li>
+						<div class="row text-bottom d-flex flex-column">
+							<div class="row d-flex flex-row">
+								<p class="text-secondary my-0 py-0 ml-3 mr-1">Cookie</p>
+								<p class="text-secondary lignenav my-0 py-0 ml-3">Privacy</p>
+							</div>
+							<div>
+								<p id="view_count_header"></p>
+								<div id="view_count_container">
+									<p
+										style="margin-bottom: 0 !important"
+										id="view_count_text"
+									></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</ul>
+			</div>
+		</nav>
 
-    <div class="btn-group dropright">
-      <button
-        style="z-index: 100"
-        type="button"
-        class="btn dropdown-toggle"
-        data-toggle="dropdown"
-        aria-haspopup="true"
-        aria-expanded="false"
-      >
-        <i class="fab fa-spotify"></i>
-      </button>
+		<div class="btn-group dropright">
+			<button
+				style="z-index: 100"
+				type="button"
+				class="btn dropdown-toggle"
+				data-toggle="dropdown"
+				aria-haspopup="true"
+				aria-expanded="false"
+			>
+				<i class="fab fa-spotify"></i>
+			</button>
 
-      <div class="dropdown-menu position-absolute">
-        <a class="dropdown-item" href="index.html">Home</a>
-        <a class="dropdown-item" href="artist.html">Search</a>
-        <a class="dropdown-item" href="album.html">Your library</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="Register.html">Sign Up</a>
-        <a class="dropdown-item" href="login.html">Login</a>
-      </div>
-    </div>
-    <!-- end of navbar -->
+			<div class="dropdown-menu position-absolute">
+				<a class="dropdown-item" href="index.html">Home</a>
+				<a class="dropdown-item" href="artist.html">Search</a>
+				<a class="dropdown-item" href="album.html">Your library</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="Register.html">Sign Up</a>
+				<a class="dropdown-item" href="login.html">Login</a>
+			</div>
+		</div>
+		<!-- end of navbar -->
 
-    <div class="container-fluid" id="mainBody">
-      <!--NAVBAR FOR BODY-->
+		<div class="container-fluid" id="mainBody">
+			<!--NAVBAR FOR BODY-->
 
-      <div class="container-fluid">
-        <div
-          class="row mt-4 align-items-center justify-content-center mb-5"
-          id="mainNav"
-        >
-          <div
-            class="list-group list-group-horizontal"
-            id="list-tab"
-            role="tablist"
-          >
-            <a
-              class="list-group-item list-group-item-action active"
-              id="list-trending-list"
-              data-toggle="list"
-              href="#list-trending"
-              role="tab"
-              aria-controls="trending"
-              >TRENDING</a
-            >
-            <a
-              class="list-group-item list-group-item-action"
-              id="list-pod-list"
-              data-toggle="list"
-              href="#list-pod"
-              role="tab"
-              aria-controls="pod"
-              >PODCAST</a
-            >
-            <a
-              class="list-group-item list-group-item-action"
-              id="list-moodGenres-list"
-              data-toggle="list"
-              href="#list-moodGenres"
-              role="tab"
-              aria-controls="moodGenres"
-              >MOODS AND GENRES</a
-            >
-            <a
-              class="list-group-item list-group-item-action"
-              id="list-new-list"
-              data-toggle="list"
-              href="#list-new"
-              role="tab"
-              aria-controls="new"
-              >NEW RELEASES</a
-            >
-            <a
-              class="list-group-item list-group-item-action"
-              id="list-discover-list"
-              data-toggle="list"
-              href="#list-discover"
-              role="tab"
-              aria-controls="discover"
-              >DISCOVER</a
-            >
-          </div>
-        </div>
+			<div class="container-fluid">
+				<div
+					class="row mt-4 align-items-center justify-content-center mb-5"
+					id="mainNav"
+				>
+					<div
+						class="list-group list-group-horizontal"
+						id="list-tab"
+						role="tablist"
+					>
+						<a
+							class="list-group-item list-group-item-action active template"
+							id="list-trending-list"
+							data-toggle="list"
+							href="#list-trending"
+							role="tab"
+							aria-controls="trending"
+							>TRENDING</a
+						>
+						<a
+							class="list-group-item list-group-item-action"
+							id="list-pod-list"
+							data-toggle="list"
+							href="#list-pod"
+							role="tab"
+							aria-controls="pod"
+							>PODCAST</a
+						>
+						<a
+							class="list-group-item list-group-item-action"
+							id="list-moodGenres-list"
+							data-toggle="list"
+							href="#list-moodGenres"
+							role="tab"
+							aria-controls="moodGenres"
+							>MOODS AND GENRES</a
+						>
+						<a
+							class="list-group-item list-group-item-action"
+							id="list-new-list"
+							data-toggle="list"
+							href="#list-new"
+							role="tab"
+							aria-controls="new"
+							>NEW RELEASES</a
+						>
+						<a
+							class="list-group-item list-group-item-action"
+							id="list-discover-list"
+							data-toggle="list"
+							href="#list-discover"
+							role="tab"
+							aria-controls="discover"
+							>DISCOVER</a
+						>
+					</div>
+				</div>
 
-        <!--BODY CONTENT-->
-        <!--TESTING COMMENT-->
+				<!--BODY CONTENT-->
+				<!--TESTING COMMENT-->
 
-        <div class="row">
-          <div class="tab-content" id="nav-tabContent">
-            <div
-              class="tab-pane swing-in-bottom-fwd show active"
-              id="list-trending"
-              role="tabpanel"
-              aria-labelledby="list-trending-list"
-            >
-              <!--TRENDING-->
-              <div class="container-fluid">
-                <div class="row mb-3"><h2>#THROWBACKTHURSDAY</h2></div>
+				<div class="row">
+					<div class="tab-content" id="nav-tabContent">
+						<!--TRENDING-->
+						<div
+							class="tab-pane swing-in-bottom-fwd show template"
+							id="list-trending"
+							role="tabpanel"
+							aria-labelledby="list-trending-list"
+						>
+							<div class="container-fluid">
+								<div class="row">
+									<div
+										class="card col col-12 col-sm-6 col-lg-4 col-xl-2 template"
+									>
+										<img
+											src="imgs/homepage/trending1.jpg"
+											class="card-img-top"
+											alt="..."
+										/>
+										<div class="imgIcon">
+											<i class="fab fa-spotify"></i>
+										</div>
+										<div class="card-body">
+											<p class="card-text">Italian Karaoke</p>
+										</div>
+									</div>
+								</div>
 
-                <div class="row">
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/trending1.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Italian Karaoke</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/trending2.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Lyricists</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/trending3.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text text-center">
-                          Italy's Frequent Rotation
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/trending4.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">00s Italy</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/trending5.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Cocktail Hour</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/trending6.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text text-center">
-                          I Love My '90s Hip-Hop
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+								<div class="row mt-5 mb-3">
+									<h3>Charts</h3>
+								</div>
+							</div>
+						</div>
+						<!--PODCASTS-->
+						<div
+							class="tab-pane swing-in-bottom-fwd"
+							id="list-pod"
+							role="tabpanel"
+							aria-labelledby="list-pod-list"
+						>
+							<div class="container-fluid">
+								<div class="row mb-3"><h2>Top podcasts</h2></div>
 
-                <div class="row mt-5 mb-3">
-                  <h3>Charts</h3>
-                </div>
+								<div class="row">
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/podcast1.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text text-center">Times news briefing</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/podcast2.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text text-center">
+													The Joe Rogan Experience
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/podcast3.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">talkSPORT Hit</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/podcast4.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">The Smart 7</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/podcast5.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">Call Her Daddy</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/podcast6.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">Happy Place</p>
+											</div>
+										</div>
+									</div>
+								</div>
 
-                <div class="row">
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/chart1.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Global Top 50</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/chart2.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">UK Top 50</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/chart3.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Global Viral 50</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/chart4.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">UK Viral 50</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+								<div class="row mt-5 mb-3">
+									<h3>Shows to try</h3>
+								</div>
 
-                <div class="row mt-5 mb-3">
-                  <h3>Editor's Picks</h3>
-                </div>
+								<div class="row">
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/stt1.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text text-center">
+													Best Podcasts of the Week
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/stt2.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">Goal!</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/stt3.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text text-center">Laugh Out Loud UK</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/stt4.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">Talking Music</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/stt5.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text text-center">
+													Inspirational Black Life Stories
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/stt6.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text text-center">
+													Keeping The Kids Entertained
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
 
-                <div class="row">
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/editor1.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Our Generation</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/editor2.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Riffs & Runs</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/editor3.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text text-center">
-                          A Breath of Fresh Éire
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/editor4.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Who We Be</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/editor5.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">The Indie List</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/editor6.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Hot Hits UK</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="tab-pane swing-in-bottom-fwd"
-              id="list-pod"
-              role="tabpanel"
-              aria-labelledby="list-pod-list"
-            >
-              <!--PODCASTS-->
+								<div class="row mt-5 mb-3">
+									<h3>Shows We Think You'll Like</h3>
+								</div>
 
-              <div class="container-fluid">
-                <div class="row mb-3"><h2>Top podcasts</h2></div>
+								<div class="row">
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/podrecom1.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text text-center">
+													Lorehammer - A Warhammer 40k Podcast
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/podrecom2.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">Critical Role</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/podrecom3.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text text-center">
+													My Dad Wrote a Porno
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/podrecom4.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">Abroad in Japan</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/podrecom5.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">Critical Role</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/podrecom6.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">Red Web</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 
-                <div class="row">
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/podcast1.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text text-center">Times news briefing</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/podcast2.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text text-center">
-                          The Joe Rogan Experience
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/podcast3.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">talkSPORT Hit</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/podcast4.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">The Smart 7</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/podcast5.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Call Her Daddy</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/podcast6.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Happy Place</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+						<div
+							class="tab-pane swing-in-bottom-fwd"
+							id="list-moodGenres"
+							role="tabpanel"
+							aria-labelledby="list-moodGenres-list"
+						>
+							<!--MOODS AND GENRES-->
 
-                <div class="row mt-5 mb-3">
-                  <h3>Shows to try</h3>
-                </div>
+							<div class="container-fluid">
+								<div class="row mb-3"><h2>Mood</h2></div>
 
-                <div class="row">
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/stt1.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text text-center">
-                          Best Podcasts of the Week
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/stt2.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Goal!</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/stt3.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text text-center">Laugh Out Loud UK</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/stt4.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Talking Music</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/stt5.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text text-center">
-                          Inspirational Black Life Stories
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/stt6.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text text-center">
-                          Keeping The Kids Entertained
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+								<div class="row">
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/mood1.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">Autumn Acoustic</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/mood2.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">Spooky</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/mood3.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">duvet day</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs//homepage/mood4.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text text-center">
+													The Most Beautiful Songs in the World
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/mood5.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">Mood Booster</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/mood6.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">Feel Good Friday</p>
+											</div>
+										</div>
+									</div>
+								</div>
 
-                <div class="row mt-5 mb-3">
-                  <h3>Shows We Think You'll Like</h3>
-                </div>
+								<div class="row mt-5 mb-3">
+									<h3>Chill</h3>
+								</div>
 
-                <div class="row">
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/podrecom1.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text text-center">
-                          Lorehammer - A Warhammer 40k Podcast
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/podrecom2.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Critical Role</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/podrecom3.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text text-center">
-                          My Dad Wrote a Porno
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/podrecom4.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Abroad in Japan</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/podrecom5.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Critical Role</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/podrecom6.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Red Web</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+								<div class="row">
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/chill1.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">Cinematic Chillout</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/chill2.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">Ambient Relaxation</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/chill3.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">Yoga & Meditation</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/chill4.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">Lo-Fi Beats</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/chill5.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">Chilled Jazz</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/chill6.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">Chill Vibes</p>
+											</div>
+										</div>
+									</div>
+								</div>
 
-            <div
-              class="tab-pane swing-in-bottom-fwd"
-              id="list-moodGenres"
-              role="tabpanel"
-              aria-labelledby="list-moodGenres-list"
-            >
-              <!--MOODS AND GENRES-->
+								<div class="row mt-5 mb-3">
+									<h3>Rock</h3>
+								</div>
 
-              <div class="container-fluid">
-                <div class="row mb-3"><h2>Mood</h2></div>
+								<div class="row">
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/rock1.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">The Rock List</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/rock2.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">misfits 2.0</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/rock3.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">The Pit</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/rock4.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">Rock Classics</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/rock5.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">00s Rock Anthems</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/rock6.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">Legendary</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div
+							class="tab-pane swing-in-bottom-bck"
+							id="list-new"
+							role="tabpanel"
+							aria-labelledby="list-new-list"
+						>
+							<!--NEW RELEASES-->
 
-                <div class="row">
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/mood1.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Autumn Acoustic</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/mood2.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Spooky</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/mood3.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">duvet day</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs//homepage/mood4.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text text-center">
-                          The Most Beautiful Songs in the World
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/mood5.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Mood Booster</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/mood6.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Feel Good Friday</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+							<div class="container-fluid">
+								<div class="row mb-3"><h2>New albums & singles</h2></div>
 
-                <div class="row mt-5 mb-3">
-                  <h3>Chill</h3>
-                </div>
+								<div class="row">
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/nsa1.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text text-center">
+													Song Machine, Season One: Strange Timez
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/nsa2.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">Moral Panic</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/nsa3.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">All Blessed</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/nsa4.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text text-center">
+													The Worst Generation
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/nsa5.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">Nectar</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/nsa6.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">12 Questions</p>
+											</div>
+										</div>
+									</div>
+								</div>
 
-                <div class="row">
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/chill1.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Cinematic Chillout</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/chill2.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Ambient Relaxation</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/chill3.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Yoga & Meditation</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/chill4.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Lo-Fi Beats</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/chill5.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Chilled Jazz</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/chill6.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Chill Vibes</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+								<div class="row">
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/nsa7.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">Different Dude</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/nsa8.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">Fake It Flowers</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/nsa9.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">Cherry Blossom</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/nsa10.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text text-center">
+													The Familiar Stranger
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/nsa11.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text text-center">
+													Blue Note Re:imagined
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/nsa12.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">I Wish I Was A...</p>
+											</div>
+										</div>
+									</div>
+								</div>
 
-                <div class="row mt-5 mb-3">
-                  <h3>Rock</h3>
-                </div>
+								<div class="row mt-5 mb-3">
+									<h3>Playlists</h3>
+								</div>
 
-                <div class="row">
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/rock1.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">The Rock List</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/rock2.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">misfits 2.0</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/rock3.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">The Pit</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/rock4.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Rock Classics</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/rock5.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">00s Rock Anthems</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/rock6.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Legendary</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="tab-pane swing-in-bottom-bck"
-              id="list-new"
-              role="tabpanel"
-              aria-labelledby="list-new-list"
-            >
-              <!--NEW RELEASES-->
+								<div class="row">
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/newplay1.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">All New Indie</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs//homepage/newplay2.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">Hot New Bands</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/newplay3.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">Fresh Finds: Experimental</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/newplay4.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">New Music Friday UK</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/newplay5.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">Release Radar</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/newplay6.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">All New Rock</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div
+							class="tab-pane swing-in-bottom-fwd"
+							id="list-discover"
+							role="tabpanel"
+							aria-labelledby="list-discover-list"
+						>
+							<!--DISCOVER-->
 
-              <div class="container-fluid">
-                <div class="row mb-3"><h2>New albums & singles</h2></div>
+							<div class="container-fluid">
+								<div class="row mb-3"><h2>Top recommendations for you</h2></div>
 
-                <div class="row">
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/nsa1.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text text-center">
-                          Song Machine, Season One: Strange Timez
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/nsa2.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Moral Panic</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/nsa3.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">All Blessed</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/nsa4.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text text-center">
-                          The Worst Generation
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/nsa5.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Nectar</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/nsa6.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">12 Questions</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+								<div class="row">
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/recom1.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">Oneknowing</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/recom2.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">Fries</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/recom3.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">okay</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/recom4.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">Kokopuffs Taster Pack</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/recom5.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">Sad Wizard Vibes</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/recom6.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">K.K Slider Covers</p>
+											</div>
+										</div>
+									</div>
+								</div>
 
-                <div class="row">
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/nsa7.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Different Dude</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/nsa8.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Fake It Flowers</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/nsa9.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Cherry Blossom</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/nsa10.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text text-center">
-                          The Familiar Stranger
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/nsa11.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text text-center">
-                          Blue Note Re:imagined
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/nsa12.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">I Wish I Was A...</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+								<div class="row mt-5 mb-3">
+									<h3>Because you listened to SIAMES</h3>
+								</div>
 
-                <div class="row mt-5 mb-3">
-                  <h3>Playlists</h3>
-                </div>
+								<div class="row">
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/siames1.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">Inmate 8576</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/siames2.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text text-center">
+													a modern tragedy vol.1
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/siames3.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">Good & Evil</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/siames4.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">Now or Never</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/siames5.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">Over The Top</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/siames6.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">Who Knew</p>
+											</div>
+										</div>
+									</div>
+								</div>
 
-                <div class="row">
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/newplay1.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">All New Indie</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs//homepage/newplay2.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Hot New Bands</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/newplay3.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Fresh Finds: Experimental</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/newplay4.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">New Music Friday UK</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/newplay5.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Release Radar</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/newplay6.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">All New Rock</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="tab-pane swing-in-bottom-fwd"
-              id="list-discover"
-              role="tabpanel"
-              aria-labelledby="list-discover-list"
-            >
-              <!--DISCOVER-->
+								<div class="row mt-5 mb-3">
+									<h3>Similar to Joji</h3>
+								</div>
 
-              <div class="container-fluid">
-                <div class="row mb-3"><h2>Top recommendations for you</h2></div>
+								<div class="row">
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/joji1.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">D97</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/joji2.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text text-center">
+													The Fall of Hobo Johnson
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/joji3.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text text-center">
+													Let Me Down (feat. blink-182)
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/joji4.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text text-center">
+													Pink Season: The Prophecy
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/joji5.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">skeletons</p>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
+										<div class="card">
+											<img
+												src="imgs/homepage/joji6.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="imgIcon">
+												<i class="fab fa-spotify"></i>
+											</div>
+											<div class="card-body">
+												<p class="card-text">BALI</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-                <div class="row">
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/recom1.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Oneknowing</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/recom2.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Fries</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/recom3.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">okay</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/recom4.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Kokopuffs Taster Pack</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/recom5.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Sad Wizard Vibes</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/recom6.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">K.K Slider Covers</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+		<!-- START PLAYER -->
 
-                <div class="row mt-5 mb-3">
-                  <h3>Because you listened to SIAMES</h3>
-                </div>
+		<div
+			class="col col-lg-12 d-flex flex-column text-center player-container"
+			id="player-container"
+		>
+			<div class="row text-center mt-3 pb-0 player-controls">
+				<svg
+					width="1em"
+					height="1em"
+					viewBox="0 0 16 16"
+					class="bi bi-shuffle mx-2"
+					fill="currentColor"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						fill-rule="evenodd"
+						d="M0 3.5A.5.5 0 0 1 .5 3H1c2.202 0 3.827 1.24 4.874 2.418.49.552.865 1.102 1.126 1.532.26-.43.636-.98 1.126-1.532C9.173 4.24 10.798 3 13 3v1c-1.798 0-3.173 1.01-4.126 2.082A9.624 9.624 0 0 0 7.556 8a9.624 9.624 0 0 0 1.317 1.918C9.828 10.99 11.204 12 13 12v1c-2.202 0-3.827-1.24-4.874-2.418A10.595 10.595 0 0 1 7 9.05c-.26.43-.636.98-1.126 1.532C4.827 11.76 3.202 13 1 13H.5a.5.5 0 0 1 0-1H1c1.798 0 3.173-1.01 4.126-2.082A9.624 9.624 0 0 0 6.444 8a9.624 9.624 0 0 0-1.317-1.918C4.172 5.01 2.796 4 1 4H.5a.5.5 0 0 1-.5-.5z"
+					/>
+					<path
+						d="M13 5.466V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192zm0 9v-3.932a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192z"
+					/>
+				</svg>
+				<div class="navigation">
+					<button id="prev" class="action-btn">
+						<svg
+							width="1em"
+							height="1em"
+							viewBox="0 0 16 16"
+							class="bi bi-skip-start-fill mx-2"
+							fill="currentColor"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								fill-rule="evenodd"
+								d="M4.5 3.5A.5.5 0 0 0 4 4v8a.5.5 0 0 0 1 0V4a.5.5 0 0 0-.5-.5z"
+							/>
+							<path
+								d="M4.903 8.697l6.364 3.692c.54.313 1.232-.066 1.232-.697V4.308c0-.63-.692-1.01-1.232-.696L4.903 7.304a.802.802 0 0 0 0 1.393z"
+							/>
+						</svg>
+					</button>
 
-                <div class="row">
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/siames1.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Inmate 8576</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/siames2.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text text-center">
-                          a modern tragedy vol.1
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/siames3.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Good & Evil</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/siames4.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Now or Never</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/siames5.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Over The Top</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/siames6.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">Who Knew</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+					<button id="play" class="action-btn action-btn-big">
+						<i
+							class="far fa-play-circle"
+							style="font-size: 30px; margin-top: -5px; width: 30px"
+						></i>
+					</button>
+					<button id="next" class="action-btn">
+						<svg
+							width="1em"
+							height="1em"
+							viewBox="0 0 16 16"
+							class="bi bi-skip-end-fill mx-2"
+							fill="currentColor"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								fill-rule="evenodd"
+								d="M12 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z"
+							/>
+							<path
+								d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"
+							/>
+						</svg>
+					</button>
+				</div>
+				<svg
+					width="1em"
+					height="1em"
+					viewBox="0 0 16 16"
+					class="bi bi-arrow-repeat mx-2"
+					fill="currentColor"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"
+					/>
+					<path
+						fill-rule="evenodd"
+						d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"
+					/>
+				</svg>
+			</div>
+			<div class="row pt-2 position-relative slider mb-3 d-flex">
+				<div class="progress-container" id="progress-container">
+					<div class="progress" id="progress"></div>
+				</div>
+			</div>
 
-                <div class="row mt-5 mb-3">
-                  <h3>Similar to Joji</h3>
-                </div>
+			<div class="col-sm-12 col-lg-2 third-col-player mr-2">
+				<svg
+					width="1em"
+					height="1em"
+					viewBox="0 0 16 16"
+					class="bi bi-list-ul mx-2"
+					fill="currentColor"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						fill-rule="evenodd"
+						d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+					/>
+				</svg>
+				<svg
+					width="1em"
+					height="1em"
+					viewBox="0 0 16 16"
+					class="bi bi-pip mx-2"
+					fill="currentColor"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						fill-rule="evenodd"
+						d="M0 3.5A1.5 1.5 0 0 1 1.5 2h13A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5v-9zM1.5 3a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z"
+					/>
+					<path
+						d="M8 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5v-3z"
+					/>
+				</svg>
+				<svg
+					width="1em"
+					height="1em"
+					viewBox="0 0 16 16"
+					class="bi bi-volume-up mx-2"
+					fill="currentColor"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						fill-rule="evenodd"
+						d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06zM6 5.04L4.312 6.39A.5.5 0 0 1 4 6.5H2v3h2a.5.5 0 0 1 .312.11L6 10.96V5.04z"
+					/>
+					<path
+						d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"
+					/>
+					<path
+						d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"
+					/>
+					<path
+						d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707z"
+					/>
+				</svg>
+				<form>
+					<div class="form-group">
+						<label for="formControlRange" class="volumecolor"></label>
+						<input
+							type="range"
+							class="form-control-range"
+							id="formControlRange"
+						/>
+					</div>
+				</form>
+			</div>
 
-                <div class="row">
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/joji1.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">D97</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/joji2.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text text-center">
-                          The Fall of Hobo Johnson
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/joji3.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text text-center">
-                          Let Me Down (feat. blink-182)
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/joji4.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text text-center">
-                          Pink Season: The Prophecy
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/joji5.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">skeletons</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <div class="card">
-                      <img
-                        src="imgs/homepage/joji6.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="imgIcon">
-                        <i class="fab fa-spotify"></i>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-text">BALI</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+			<div class="row">
+				<div class="col-sm-12 col-lg-3 ml-3 d-flex singer-player">
+					<div class="img-container">
+						<img src="imgs/In_the_end.jpg" id="cover" />
+					</div>
+					<div class="title" style="color: #fff">
+						<h4 class="my-0 mx-3 p-0" id="title"></h4>
+					</div>
+					<svg
+						width="1em"
+						height="1em"
+						viewBox="0 0 16 16"
+						class="bi bi-heart mt-2 mr-3"
+						style="color: rgb(206, 206, 206)"
+						fill="currentColor"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							fill-rule="evenodd"
+							d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+						/>
+					</svg>
+				</div>
+			</div>
 
-    <!-- START PLAYER -->
-
-    <div
-      class="col col-lg-12 d-flex flex-column text-center player-container"
-      id="player-container"
-    >
-      <div class="row text-center mt-3 pb-0 player-controls">
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 16 16"
-          class="bi bi-shuffle mx-2"
-          fill="currentColor"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M0 3.5A.5.5 0 0 1 .5 3H1c2.202 0 3.827 1.24 4.874 2.418.49.552.865 1.102 1.126 1.532.26-.43.636-.98 1.126-1.532C9.173 4.24 10.798 3 13 3v1c-1.798 0-3.173 1.01-4.126 2.082A9.624 9.624 0 0 0 7.556 8a9.624 9.624 0 0 0 1.317 1.918C9.828 10.99 11.204 12 13 12v1c-2.202 0-3.827-1.24-4.874-2.418A10.595 10.595 0 0 1 7 9.05c-.26.43-.636.98-1.126 1.532C4.827 11.76 3.202 13 1 13H.5a.5.5 0 0 1 0-1H1c1.798 0 3.173-1.01 4.126-2.082A9.624 9.624 0 0 0 6.444 8a9.624 9.624 0 0 0-1.317-1.918C4.172 5.01 2.796 4 1 4H.5a.5.5 0 0 1-.5-.5z"
-          />
-          <path
-            d="M13 5.466V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192zm0 9v-3.932a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192z"
-          />
-        </svg>
-        <div class="navigation">
-          <button id="prev" class="action-btn">
-            <svg
-              width="1em"
-              height="1em"
-              viewBox="0 0 16 16"
-              class="bi bi-skip-start-fill mx-2"
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M4.5 3.5A.5.5 0 0 0 4 4v8a.5.5 0 0 0 1 0V4a.5.5 0 0 0-.5-.5z"
-              />
-              <path
-                d="M4.903 8.697l6.364 3.692c.54.313 1.232-.066 1.232-.697V4.308c0-.63-.692-1.01-1.232-.696L4.903 7.304a.802.802 0 0 0 0 1.393z"
-              />
-            </svg>
-          </button>
-
-          <button id="play" class="action-btn action-btn-big">
-            <i
-              class="far fa-play-circle"
-              style="font-size: 30px; margin-top: -5px; width: 30px"
-            ></i>
-          </button>
-          <button id="next" class="action-btn">
-            <svg
-              width="1em"
-              height="1em"
-              viewBox="0 0 16 16"
-              class="bi bi-skip-end-fill mx-2"
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M12 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z"
-              />
-              <path
-                d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"
-              />
-            </svg>
-          </button>
-        </div>
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 16 16"
-          class="bi bi-arrow-repeat mx-2"
-          fill="currentColor"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"
-          />
-          <path
-            fill-rule="evenodd"
-            d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"
-          />
-        </svg>
-      </div>
-      <div class="row pt-2 position-relative slider mb-3 d-flex">
-        <div class="progress-container" id="progress-container">
-          <div class="progress" id="progress"></div>
-        </div>
-      </div>
-
-      <div class="col-sm-12 col-lg-2 third-col-player mr-2">
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 16 16"
-          class="bi bi-list-ul mx-2"
-          fill="currentColor"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
-          />
-        </svg>
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 16 16"
-          class="bi bi-pip mx-2"
-          fill="currentColor"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M0 3.5A1.5 1.5 0 0 1 1.5 2h13A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5v-9zM1.5 3a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z"
-          />
-          <path
-            d="M8 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5v-3z"
-          />
-        </svg>
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 16 16"
-          class="bi bi-volume-up mx-2"
-          fill="currentColor"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06zM6 5.04L4.312 6.39A.5.5 0 0 1 4 6.5H2v3h2a.5.5 0 0 1 .312.11L6 10.96V5.04z"
-          />
-          <path
-            d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"
-          />
-          <path
-            d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"
-          />
-          <path
-            d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707z"
-          />
-        </svg>
-        <form>
-          <div class="form-group">
-            <label for="formControlRange" class="volumecolor"></label>
-            <input
-              type="range"
-              class="form-control-range"
-              id="formControlRange"
-            />
-          </div>
-        </form>
-      </div>
-
-      <div class="row">
-        <div class="col-sm-12 col-lg-3 ml-3 d-flex singer-player">
-          <div class="img-container">
-            <img src="imgs/In_the_end.jpg" id="cover" />
-          </div>
-          <div class="title" style="color: #fff">
-            <h4 class="my-0 mx-3 p-0" id="title"></h4>
-          </div>
-          <svg
-            width="1em"
-            height="1em"
-            viewBox="0 0 16 16"
-            class="bi bi-heart mt-2 mr-3"
-            style="color: rgb(206, 206, 206)"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
-            />
-          </svg>
-        </div>
-      </div>
-
-      <audio src="music/Point of Authority.mp3" id="audio-player"></audio>
-    </div>
-    <!-- End PLAYER -->
-    <script src="spotify.js"></script>
-    <script
-      type="application/javascript"
-      src="https://api.ipify.org?format=jsonp&callback=get_viewers_ip"
-    ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+			<audio src="music/Point of Authority.mp3" id="audio-player"></audio>
+		</div>
+		<!-- End PLAYER -->
+		<script src="spotify.js"></script>
+		<script
+			type="application/javascript"
+			src="https://api.ipify.org?format=jsonp&callback=get_viewers_ip"
+		></script>
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+			crossorigin="anonymous"
+		></script>
+	</body>
 </html>

@@ -5,6 +5,29 @@ const genres = {
 	Rock: 152,
 }
 
+window.onload = () => {
+	fillNavbar(Object.keys(genres))
+	document.querySelector("#searchBar").addEventListener("keyup", search)
+}
+
+/**
+ * this filters the artists according to the contents of the searchbar
+ * @param {*} event an onkeyup listener added to the search input
+ */
+const search = (event) => {
+	let query = document.querySelector("#search").value
+
+	if (query.length >= 3) {
+		const cards = document.querySelector(".card").map((card) => {
+			if (card.name.toLowerCase.includes(query.toLowerCase)) {
+				card.remove
+			}
+		})
+	} else {
+		fillNavbar(Object.keys(genres))
+	}
+}
+
 /**
  *
  * @param {*} category the category tofetch
@@ -100,6 +123,7 @@ const fillCard = (artist, target) => {
 	const card = template.cloneNode(true)
 	artist.then((artist) => {
 		card.classList.remove("template")
+		card.setAttribute("name", artist.name)
 		card.querySelector(".card-img-top").src = artist.picture_medium
 		target.appendChild(card)
 	})

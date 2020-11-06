@@ -20,6 +20,9 @@ h4 {
 .template {
 	display: none;
 }
+.modal-content {
+	background-color: rgba(128, 128, 128, 0.5);
+}
 
 /****************************************LOGIN PAGE********************************************/
 

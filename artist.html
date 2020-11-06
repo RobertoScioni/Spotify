@@ -435,6 +435,8 @@
           fetchAlbums(id)
 
           replaceCover(picture_xl)
+
+          replaceAbout(data)
         })
         .catch(err => {
           console.error(err);
@@ -481,6 +483,8 @@
 
           let cardtitle = arr[i].title
           let cardimg = arr[i].album.cover_xl
+          let id = arr[i].album.id
+          let albumName = arr[i].album.title
 
           card.innerHTML = `<div class="card">
                               <img
@@ -491,7 +495,8 @@
                               <div class="imgIcon">
                               </div>
                               <div class="card-body">
-                                <p class="card-text">${cardtitle}</p>
+                                <p class="card-text my-0">${cardtitle}</p>
+                                <a href="album.html?id=${id}" class="card-text text-white text-muted">${albumName}</a>
                               </div>
                             </div>`
 
@@ -595,7 +600,24 @@
       };
 
       //REPLACES ARTIST INFO IN ABOUT TAB
-      const replaceAbout = function () {
+      const replaceAbout = function (arr) {
+        let aboutSection = document.querySelector("#list-messages div.col-xl-8")
+        console.log(aboutSection)
+
+        const{id, name, nb_album, nb_fan, picture_xl, tracklist} = arr
+
+        aboutSection.innerHTML = `<div class="card text-white">
+                                    <img src="${picture_xl}" class="card-img img-fluid" alt="..." style="width: auto;">
+                                    <div class="rankIcon">
+                                      <h4>#69</h4>
+                                      <p>in the world</p>
+                                    </div>
+                                    <div class="card-img-overlay d-flex justify-content-end align-items-center flex-column">
+                                      <h5 class="card-title align-self-start">${nb_fan} monthly listeners</h5>
+                                      <p class="card-text">Rooted at the crossroads of aggresive metal and beat-driven hip-hop, ${name} became one of the most successful acts of the early 21st century by incorporating elements from across genres, injecting hardcore rap, raucous punk, atmospheric...</p>
+                                      
+                                    </div>
+                                  </div>`
 
       } 
     </script>

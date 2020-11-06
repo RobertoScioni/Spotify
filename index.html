@@ -221,7 +221,15 @@
 					<div class="modal-dialog">
 						<div class="modal-content">
 							<div class="modal-header">
-								<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+								<h5 class="modal-title" id="exampleModalLabel">
+									<input
+										id="searchBar"
+										class="form-control mr-sm-2"
+										type="search"
+										placeholder="Search"
+										aria-label="Search"
+									/>
+								</h5>
 								<button
 									type="button"
 									class="close"
@@ -231,15 +239,7 @@
 									<span aria-hidden="true">&times;</span>
 								</button>
 							</div>
-							<div class="modal-body">
-								<input
-									id="searchBar"
-									class="form-control mr-sm-2"
-									type="search"
-									placeholder="Search"
-									aria-label="Search"
-								/>
-							</div>
+							<div class="modal-body"></div>
 							<div class="modal-footer">
 								<button type="button" class="btn btn-primary">close</button>
 							</div>
@@ -602,17 +602,19 @@
 								<div class="row">
 									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
 										<div class="card">
-											<img
-												src="imgs/homepage/mood1.jpg"
-												class="card-img-top"
-												alt="..."
-											/>
-											<div class="imgIcon">
-												<i class="fab fa-spotify"></i>
-											</div>
-											<div class="card-body">
-												<p class="card-text">Autumn Acoustic</p>
-											</div>
+											<a href="">
+												<img
+													src="imgs/homepage/mood1.jpg"
+													class="card-img-top"
+													alt="..."
+												/>
+												<div class="imgIcon">
+													<i class="fab fa-spotify"></i>
+												</div>
+												<div class="card-body">
+													<p class="card-text">Autumn Acoustic</p>
+												</div>
+											</a>
 										</div>
 									</div>
 									<div class="col col-12 col-sm-6 col-lg-4 col-xl-2">
@@ -1687,7 +1689,7 @@
 			<audio src="music/Point of Authority.mp3" id="audio-player"></audio>
 		</div>
 		<!-- End PLAYER -->
-		<script src="spotify.js"></script>
+
 		<script
 			type="application/javascript"
 			src="https://api.ipify.org?format=jsonp&callback=get_viewers_ip"

@@ -15,12 +15,20 @@ window.onload = () => {
  * @param {*} event an onkeyup listener added to the search input
  */
 const search = (event) => {
-	let query = document.querySelector("#search").value
+	let query = document.querySelectorAll("#searchBar").value
 
 	if (query.length >= 3) {
-		const cards = document.querySelector(".card").map((card) => {
+		let cards = Array.from(document.querySelector(".card"))
+		console.log(cards)
+		/*cards.map((card) => {
 			if (card.name.toLowerCase.includes(query.toLowerCase)) {
-				card.remove
+				card.remove()
+			}
+        })*/
+		cards.forEach((card) => {
+			console.log(card)
+			if (card.name.toLowerCase.includes(query.toLowerCase)) {
+				card.remove()
 			}
 		})
 	} else {
@@ -65,7 +73,7 @@ const erase = (query) => {
 
 const fillNavbar = (voices) => {
 	erase("#list-tab>.list-group-item")
-	//console.log(voices)
+	////console.log(voices)
 	const template = document.querySelector("#list-tab>.template")
 	voices.forEach((voice) => {
 		let button = template.cloneNode(true)
@@ -96,16 +104,20 @@ const fillNavTabs = (voices) => {
 		pane.setAttribute("aria-labelledby", `list-${voice}-list`)
 		erase(".card")
 		template.parentElement.appendChild(pane)
-		//console.log(fetchArtistsByCategory(genres[voice]))
+		////console.log(fetchArtistsByCategory(genres[voice]))
 		fetchArtistsByCategory(genres[voice]).then((artists) =>
 			artists.forEach((artist) => {
 				//fillCard(artist, pane.querySelector(".row"))
-				console.log(artist)
+				//console.log(artist)
 				const template = document.querySelector(".card.template")
 				const card = template.cloneNode(true)
 				card.classList.remove("template")
 				card.querySelector(".card-img-top").src = artist.picture_medium
 				card.querySelector(".card-text").innerText = artist.name
+				card.setAttribute(
+					"onclick",
+					`window.location="artist.html?id=${artist.id}"`
+				)
 				pane.querySelector(".row").appendChild(card)
 			})
 		)
@@ -114,17 +126,10 @@ const fillNavTabs = (voices) => {
 }
 
 /**
- * fills a card with the info of an artist and appends it in the target
- * @param {*} artist
+ * eventhandler for card clicks
+ * @param {*} event
  */
-const fillCard = (artist, target) => {
-	console.log(artist.name)
-	const template = document.querySelector(".card.template")
-	const card = template.cloneNode(true)
-	artist.then((artist) => {
-		card.classList.remove("template")
-		card.setAttribute("name", artist.name)
-		card.querySelector(".card-img-top").src = artist.picture_medium
-		target.appendChild(card)
-	})
+const load = () => {
+	////console.log(event.target.name)
+	window.location = "http://www.w3schools.com"
 }

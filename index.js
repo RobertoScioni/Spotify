@@ -15,10 +15,10 @@ window.onload = () => {
  * @param {*} event an onkeyup listener added to the search input
  */
 const search = (event) => {
-	let query = document.querySelectorAll("#searchBar").value
+	let query = document.querySelector("#searchBar").value
 
 	if (query.length >= 3) {
-		let cards = Array.from(document.querySelector(".card"))
+		let cards = Array.from(document.querySelectorAll(".card:not(.template)"))
 		console.log(cards)
 		/*cards.map((card) => {
 			if (card.name.toLowerCase.includes(query.toLowerCase)) {
@@ -26,8 +26,13 @@ const search = (event) => {
 			}
         })*/
 		cards.forEach((card) => {
-			console.log(card)
-			if (card.name.toLowerCase.includes(query.toLowerCase)) {
+			//console.log("card.name.toLowerCase()", card.name.toLowerCase())
+			if (
+				!card
+					.querySelector(".card-text")
+					.innerText.toLowerCase()
+					.includes(query.toLowerCase())
+			) {
 				card.remove()
 			}
 		})
